@@ -11,12 +11,14 @@ namespace Game.Scripts
     public class EnemyCrabController : MonoBehaviour
     {
         public double threshold;
+        public bool Jumping = false;
 
-        private CrabController controller;
         private Vector3 playerPos;
-        private Tweener tweener;
         private int[] directions = {0, -1, 0, 1};
         private int directionIndex;
+        
+        protected CrabController controller;
+        protected Tweener tweener;
 
         private IEnumerable<Shell> shellList = new List<Shell>();
         private double distanceToShell = float.MaxValue;
@@ -61,14 +63,19 @@ namespace Game.Scripts
             }
         }
 
-        private void AggroMovement(Vector3 targetPos)
+        protected virtual void AggroMovement(Vector3 targetPos)
         {
             tweener?.Kill();
 
             controller.Speed = 0.9f;
             var pos = transform.position;
             var horizontal = pos.x - targetPos.x > 0 ? -1 : 1;
-            controller.Handle(horizontal, 0);
+            var vertical = 0;
+            if (Jumping)
+            {
+                vertical = pos.y - targetPos.y < -1 ? 1 : 0;
+            }
+            controller.Handle(horizontal, vertical);
         }
 
         private float GetMinimumDistanceToShell()
