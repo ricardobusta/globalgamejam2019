@@ -66,14 +66,17 @@ namespace Game.Scripts
         protected virtual void AggroMovement(Vector3 targetPos)
         {
             tweener?.Kill();
-
             controller.Speed = 0.9f;
-            var pos = transform.position;
-            var horizontal = pos.x - targetPos.x > 0 ? -1 : 1;
+            
+            var pos = transform.position;            
+            var delta = pos.x - targetPos.x;
+            var horizontal = delta > 0 ? -1 : 1;
+            horizontal = Math.Abs(delta) > 0.1 ? horizontal : 0;
+            
             var vertical = 0;
             if (Jumping)
             {
-                vertical = pos.y - targetPos.y < -1 ? 1 : 0;
+                vertical = Random.Range(0f, 1f) > 0.95f ? 1 : 0;
             }
             controller.Handle(horizontal, vertical);
         }
