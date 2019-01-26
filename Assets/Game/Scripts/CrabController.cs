@@ -75,9 +75,12 @@ namespace Game.Scripts
 
         private void SetShell(Shell shell)
         {
-            hasShell = true;
-            Shell = shell;
-            shell.Activate();
+            shell.Activate(ShellAnchor,
+                () =>
+                {
+                    hasShell = true;
+                    Shell = shell;
+                });
         }
 
         private void RemoveShell()
