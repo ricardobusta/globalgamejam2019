@@ -167,6 +167,7 @@ GameObject:
   - component: {fileID: 224258211}
   - component: {fileID: 224258214}
   - component: {fileID: 224258213}
+  - component: {fileID: 224258215}
   m_Layer: 9
   m_Name: Shell
   m_TagString: Untagged
@@ -208,8 +209,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -214644771
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5a70472aef580c6458ea6b4f30389d70, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -273,6 +274,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &224258215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 224258210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a29817cac5944ae386f582c7a6b2c67d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shellCollider: {fileID: 224258213}
 --- !u!1 &291753543
 GameObject:
   m_ObjectHideFlags: 0
@@ -1827,7 +1841,7 @@ GameObject:
   - component: {fileID: 1136249621}
   - component: {fileID: 1136249624}
   m_Layer: 0
-  m_Name: Shell
+  m_Name: Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2078,17 +2092,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1768602626, guid: dd6c33e4a0814e24d90f48eb500dc098, type: 3}
-      propertyPath: Shell
-      value: 
-      objectReference: {fileID: 224258212}
-    - target: {fileID: 1768602623, guid: dd6c33e4a0814e24d90f48eb500dc098, type: 3}
-      propertyPath: m_Offset.y
-      value: 0.15088248
-      objectReference: {fileID: 0}
-    - target: {fileID: 1768602623, guid: dd6c33e4a0814e24d90f48eb500dc098, type: 3}
-      propertyPath: m_Size.y
-      value: 0.31556654
+    - target: {fileID: 1043599817, guid: dd6c33e4a0814e24d90f48eb500dc098, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.134
       objectReference: {fileID: 0}
     - target: {fileID: 1295675167, guid: dd6c33e4a0814e24d90f48eb500dc098, type: 3}
       propertyPath: m_Enabled

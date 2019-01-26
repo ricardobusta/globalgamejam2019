@@ -600,7 +600,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 1
   JumpSpeed: 4
-  Shell: {fileID: 0}
   ShellAnchor: {fileID: 1043599817}
   Grounded: 0
 --- !u!1 &5959766553297658524

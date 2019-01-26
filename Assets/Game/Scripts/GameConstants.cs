@@ -4,7 +4,7 @@ namespace Game.Scripts
 
     public static class GameConstants
     {
-        public static readonly LayerMask GroundLayer = 8;
-        public static readonly LayerMask ShellLayer = 9;
+        public static readonly LayerMask GroundLayer = 1<<8;
+        public static readonly LayerMask ShellLayer = 1<<9;
     }
 }

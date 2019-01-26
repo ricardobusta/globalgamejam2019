@@ -10,14 +10,15 @@ namespace Game.Scripts
         public float Speed = 5;
         public float JumpSpeed = 10;
 
-        public Transform Shell;
+        public Shell Shell;
         public Transform ShellAnchor;
 
         [NaughtyAttributes.ReadOnly] public bool Grounded = false;
 
-        private bool hasShell = false;
-
         private Rigidbody2D body;
+
+        private bool hasShell;
+
 
         public void Handle(float horizontalInput, float verticalInput)
         {
@@ -46,11 +47,11 @@ namespace Game.Scripts
         private void Awake()
         {
             body = GetComponent<Rigidbody2D>();
+            hasShell = Shell != null;
         }
 
         private void OnCollisionEnter2D(Collision2D other)
         {
-            Debug.Log("{other.collider.gameObject.layer}");
             if (Utils.LayerOnMask(other.collider.gameObject.layer, GameConstants.GroundLayer))
             {
                 Debug.Log("Collide with ground");
@@ -66,16 +67,33 @@ namespace Game.Scripts
             else if (Utils.LayerOnMask(other.collider.gameObject.layer, GameConstants.ShellLayer))
             {
                 Debug.Log("Collide with shell");
-                other.gameObject.SetActive(false);
+                //other.gameObject.SetActive(false);
+                var shell = other.gameObject.GetComponent<Shell>();
+                SetShell(shell);
             }
+        }
+
+        private void SetShell(Shell shell)
+        {
+            hasShell = true;
+            Shell = shell;
+            shell.Activate();
+        }
+
+        private void RemoveShell()
+        {
+            hasShell = false;
+            Shell.Deactivate();
+            Shell = null;
         }
 
         private void Update()
         {
             if (hasShell)
             {
-                Shell.position = ShellAnchor.position;
-                Shell.rotation = ShellAnchor.rotation;
+                var t = Shell.transform;
+                t.position = ShellAnchor.position;
+                t.rotation = ShellAnchor.rotation;
             }
         }
     }
