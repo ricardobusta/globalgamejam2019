@@ -11,7 +11,7 @@ namespace Game.Scripts
     {
         public Collider2D shellCollider;
 
-        private Tweener tweener;
+        private static Tweener tweener;
 
         private new Rigidbody2D rigidbody;
 
@@ -22,9 +22,8 @@ namespace Game.Scripts
 
         public void Activate(Transform target, Action afterActivation)
         {
-            tweener?.Kill();
-
             shellCollider.enabled = false;
+            rigidbody.bodyType = RigidbodyType2D.Static;
             var transform1 = transform;
             var position = transform1.position;
             var rotation = transform1.rotation;
@@ -38,9 +37,11 @@ namespace Game.Scripts
 
         public void Deactivate()
         {
-            gameObject.layer = GameConstants.DisabledShellLayer;
+            rigidbody.bodyType = RigidbodyType2D.Dynamic;
             shellCollider.enabled = true;
-            rigidbody.velocity = new Vector2(Random.Range(-2.0f, 2.0f), 4);
+            gameObject.layer = GameConstants.DisabledShellLayer;
+            rigidbody.velocity = new Vector2(Random.Range(-1.0f, 1.0f), 2);
+            transform.DORotate(Vector3.zero, 0.5f);
             DOVirtual.DelayedCall(1, () => { gameObject.layer = GameConstants.ShellLayer; });
         }
     }

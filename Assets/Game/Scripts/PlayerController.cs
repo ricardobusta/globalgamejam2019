@@ -3,9 +3,23 @@
 namespace Game.Scripts {
     [RequireComponent(typeof(CrabController))]
     public class PlayerController : MonoBehaviour {
-
-        private CrabController controller;
         
+        private static PlayerController instance;
+        public static PlayerController Instance
+        {
+            get
+            {
+                if (instance == null)
+                {
+                    instance = FindObjectOfType<PlayerController>();
+                }
+
+                return instance;
+            }
+        }
+        
+        private CrabController controller;
+
         // Start is called before the first frame update
         private void Awake() {
             controller = GetComponent<CrabController>();

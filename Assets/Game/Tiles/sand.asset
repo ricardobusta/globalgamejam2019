@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
+  m_Script: {fileID: 11500000, guid: f2e972c2fdb0468580892e785b18b819, type: 3}
   m_Name: sand
   m_EditorClassIdentifier: 
   m_Sprite: {fileID: 21300000, guid: 7680ad41d4c641043a116d9322be9841, type: 3}
@@ -34,3 +34,21 @@ MonoBehaviour:
   m_InstancedGameObject: {fileID: 0}
   m_Flags: 1
   m_ColliderType: 2
+  FriendTile: []
+  Sprites:
+  - {fileID: 21300000, guid: 7680ad41d4c641043a116d9322be9841, type: 3}
+  - {fileID: 21300002, guid: 7680ad41d4c641043a116d9322be9841, type: 3}
+  - {fileID: 21300004, guid: 7680ad41d4c641043a116d9322be9841, type: 3}
+  - {fileID: 21300006, guid: 7680ad41d4c641043a116d9322be9841, type: 3}
+  - {fileID: 21300008, guid: 7680ad41d4c641043a116d9322be9841, type: 3}
+  - {fileID: 21300010, guid: 7680ad41d4c641043a116d9322be9841, type: 3}
+  - {fileID: 21300012, guid: 7680ad41d4c641043a116d9322be9841, type: 3}
+  - {fileID: 21300014, guid: 7680ad41d4c641043a116d9322be9841, type: 3}
+  - {fileID: 21300016, guid: 7680ad41d4c641043a116d9322be9841, type: 3}
+  - {fileID: 21300018, guid: 7680ad41d4c641043a116d9322be9841, type: 3}
+  - {fileID: 21300020, guid: 7680ad41d4c641043a116d9322be9841, type: 3}
+  - {fileID: 21300022, guid: 7680ad41d4c641043a116d9322be9841, type: 3}
+  - {fileID: 21300024, guid: 7680ad41d4c641043a116d9322be9841, type: 3}
+  - {fileID: 21300026, guid: 7680ad41d4c641043a116d9322be9841, type: 3}
+  - {fileID: 21300028, guid: 7680ad41d4c641043a116d9322be9841, type: 3}
+  - {fileID: 21300030, guid: 7680ad41d4c641043a116d9322be9841, type: 3}
