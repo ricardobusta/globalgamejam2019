@@ -699,8 +699,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.35355339"
-     inkscape:cx="-2637.5725"
-     inkscape:cy="2644.0461"
+     inkscape:cx="-2346.2445"
+     inkscape:cy="2553.5364"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -17754,162 +17754,185 @@ hNTOt+xrufEAAAAASUVORK5CYII=
       </g>
     </g>
     <g
-       id="g96281">
-      <g
-         inkscape:export-ydpi="96"
-         inkscape:export-xdpi="96"
-         inkscape:export-filename="C:\Dev\ggj2019\GlobalGameJam2019\Assets\Game\Sprites\Characters\shell_lamp.png"
-         transform="translate(-39.219038,-251.54502)"
-         id="g95559">
-        <path
-           style="fill:#b380ff;fill-opacity:1;stroke:#6600ff;stroke-width:2.64583373;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.98666669"
-           d="m -248.15837,-83.8399 c -12.73375,0.01344 -23.02549,3.221115 -22.99677,7.167547 v 12.029163 c 0.0288,3.946421 10.36728,7.139647 23.10106,7.135234 12.73411,-0.0044 23.04959,-3.20496 23.04952,-7.151495 l -3e-4,-0.03231 3e-4,-11.996641 -3e-4,-0.03253 c -0.0578,-3.946422 -10.41971,-7.132389 -23.15352,-7.118976 z"
-           id="path95551"
-           inkscape:connector-curvature="0"
-           sodipodi:nodetypes="cccscccccc" />
-        <path
-           style="fill:#aaeeff;fill-opacity:1;stroke:#5fbcd3;stroke-width:2.64583349;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="m -247.91786,-175.83838 c -25.4898,1.1e-4 -46.15335,20.64338 -46.15346,46.10818 -0.0818,21.76037 19.42418,35.839891 23.1556,54.263779 a 96.447328,64.949978 0 0 0 22.99787,1.954799 96.447328,64.949978 0 0 0 23.00559,-1.944726 c 3.83508,-21.532166 22.83783,-33.105702 23.14788,-54.273862 -1.1e-4,-25.46479 -20.66366,-46.10806 -46.15348,-46.10817 z"
-           id="path4567"
-           inkscape:connector-curvature="0" />
-        <path
-           style="fill:#aaeeff;fill-opacity:1;stroke:#37abc8;stroke-width:0.79374999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="m -259.44915,-74.277712 -9.51627,-61.522048"
-           id="path4609"
-           inkscape:connector-curvature="0" />
-        <path
-           style="fill:#aaeeff;fill-opacity:1;stroke:#37abc8;stroke-width:0.79374999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="m -237.7188,-73.75112 10.85489,-57.77704"
-           id="path4611"
-           inkscape:connector-curvature="0" />
-        <path
-           style="fill:#aaeeff;fill-opacity:1;stroke:#6f8a91;stroke-width:0.79374999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="m -268.06096,-134.99127 6.36948,7.17589 4.15124,-14.11541 5.47095,15.66297 6.26161,-16.90056 4.87851,15.82155 7.70588,-15.06694 0.2552,15.15609 6.31555,-4.86233"
-           id="path4613"
-           inkscape:connector-curvature="0" />
-        <ellipse
-           transform="matrix(0.99101243,-0.13376982,0.13402807,0.99097754,0,0)"
-           style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.64583325;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.98666669"
-           id="ellipse95545"
-           ry="6.0049152"
-           rx="5.9279413"
-           cy="-185.86635"
-           cx="-250.81808" />
-      </g>
+       id="g95559"
+       transform="translate(-39.219038,-251.54502)"
+       inkscape:export-filename="C:\Dev\ggj2019\GlobalGameJam2019\Assets\Game\Sprites\Characters\shell_lamp.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
       <path
-         inkscape:export-ydpi="96"
-         inkscape:export-xdpi="96"
-         inkscape:export-filename="C:\Dev\ggj2019\GlobalGameJam2019\Assets\Game\Sprites\Characters\shell_lamp.png"
+         sodipodi:nodetypes="cccscccccc"
+         inkscape:connector-curvature="0"
+         id="path95551"
+         d="m -248.15837,-83.8399 c -12.73375,0.01344 -23.02549,3.221115 -22.99677,7.167547 v 12.029163 c 0.0288,3.946421 10.36728,7.139647 23.10106,7.135234 12.73411,-0.0044 23.04959,-3.20496 23.04952,-7.151495 l -3e-4,-0.03231 3e-4,-11.996641 -3e-4,-0.03253 c -0.0578,-3.946422 -10.41971,-7.132389 -23.15352,-7.118976 z"
+         style="fill:#b380ff;fill-opacity:1;stroke:#6600ff;stroke-width:2.64583373;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.98666669" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4567"
+         d="m -247.91786,-175.83838 c -25.4898,1.1e-4 -46.15335,20.64338 -46.15346,46.10818 -0.0818,21.76037 19.42418,35.839891 23.1556,54.263779 a 96.447328,64.949978 0 0 0 22.99787,1.954799 96.447328,64.949978 0 0 0 23.00559,-1.944726 c 3.83508,-21.532166 22.83783,-33.105702 23.14788,-54.273862 -1.1e-4,-25.46479 -20.66366,-46.10806 -46.15348,-46.10817 z"
+         style="fill:#aaeeff;fill-opacity:1;stroke:#5fbcd3;stroke-width:2.64583349;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4609"
+         d="m -259.44915,-74.277712 -9.51627,-61.522048"
+         style="fill:#aaeeff;fill-opacity:1;stroke:#37abc8;stroke-width:0.79374999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4611"
+         d="m -237.7188,-73.75112 10.85489,-57.77704"
+         style="fill:#aaeeff;fill-opacity:1;stroke:#37abc8;stroke-width:0.79374999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4613"
+         d="m -268.06096,-134.99127 6.36948,7.17589 4.15124,-14.11541 5.47095,15.66297 6.26161,-16.90056 4.87851,15.82155 7.70588,-15.06694 0.2552,15.15609 6.31555,-4.86233"
+         style="fill:#aaeeff;fill-opacity:1;stroke:#6f8a91;stroke-width:0.79374999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <ellipse
+         cx="-250.81808"
+         cy="-185.86635"
+         rx="5.9279413"
+         ry="6.0049152"
+         id="ellipse95545"
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.64583325;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.98666669"
+         transform="matrix(0.99101243,-0.13376982,0.13402807,0.99097754,0,0)" />
+    </g>
+    <path
+       style="fill:#b380ff;fill-opacity:1;stroke:#6600ff;stroke-width:2.64583325;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.9901962"
+       d="m -225.16328,-388.76848 12.09841,12.48954 -8.56866,3.92888 2.51946,10.99282 -12.09841,-13.42497 8.56866,-3.18052 z"
+       id="path95960"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccc"
+       inkscape:export-filename="C:\Dev\ggj2019\GlobalGameJam2019\Assets\Game\Sprites\Characters\shell_lamp.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <ellipse
+       style="fill:url(#radialGradient95970);fill-opacity:1;stroke:none;stroke-width:2.64583325;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.9901962;paint-order:markers stroke fill"
+       id="path95962"
+       cx="-385.66861"
+       cy="-371.26559"
+       rx="40.101173"
+       ry="24.303741"
+       inkscape:export-filename="C:\Dev\ggj2019\GlobalGameJam2019\Assets\Game\Sprites\Characters\shell_lamp.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       inkscape:export-ydpi="96"
+       inkscape:export-xdpi="96"
+       inkscape:export-filename="C:\Dev\ggj2019\GlobalGameJam2019\Assets\Game\Particles\spark.png"
+       sodipodi:nodetypes="ccccccc"
+       inkscape:connector-curvature="0"
+       id="path96283"
+       d="m -235.64025,-554.90322 12.09841,12.48954 -8.56866,3.92888 2.51946,10.99282 -12.09841,-13.42497 8.56866,-3.18052 z"
+       style="fill:#b380ff;fill-opacity:1;stroke:#6600ff;stroke-width:2.64583325;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.9901962" />
+    <g
+       transform="translate(-691.86193,-362.18253)"
+       id="g95605"
+       inkscape:export-filename="C:\Dev\ggj2019\GlobalGameJam2019\Assets\Game\Sprites\Characters\shell_helmet.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <path
+         sodipodi:nodetypes="cccscccccc"
+         inkscape:connector-curvature="0"
+         id="path95583"
+         d="m 44.947262,-99.833123 c -18.217905,0.0276 -32.942083,6.615514 -32.901002,14.720682 v 24.705452 c 0.04132,8.105146 14.832269,14.663381 33.05022,14.654316 18.218424,-0.0091 32.976557,-6.582334 32.976467,-14.687714 l -4.4e-4,-0.06637 4.4e-4,-24.638659 -4.4e-4,-0.06679 c -0.08267,-8.105148 -14.90725,-14.648477 -33.125255,-14.620927 z"
+         style="fill:#536c67;fill-opacity:1;stroke:#374845;stroke-width:2.64583325;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         style="fill:#536c67;fill-opacity:1;stroke:#374845;stroke-width:2.64583325;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m -1.4186975,-128.45025 c -3.9509397,-0.50702 -8.0758988,6.27423 -9.2131625,15.14582 -1.137279,8.87159 1.1438101,16.473926 5.0948712,16.98 l 8.4159718,1.078866 c 3.9508477,0.506307 8.075497,-6.274686 9.212706,-15.145876 1.137228,-8.87118 -1.143599,-16.47333 -5.094411,-16.97994 z"
+         id="path95585"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccccccc" />
+      <path
+         id="path95587"
+         d="M 38.036252,-152.19406 A 48.268874,48.268874 0 0 0 -3.3348259,-97.896675 48.268874,48.268874 0 0 0 50.962552,-56.525598 48.268874,48.268874 0 0 0 92.333628,-110.82298 48.268874,48.268874 0 0 0 38.036252,-152.19406 Z"
+         style="fill:#6f8a91;fill-opacity:1;stroke:#374548;stroke-width:2.64583325;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.98666669"
+         inkscape:connector-curvature="0" />
+      <circle
+         r="32.179249"
+         cy="-92.845825"
+         cx="53.194309"
+         id="circle95589"
+         style="fill:#536c67;fill-opacity:1;stroke:#374845;stroke-width:2.64583325;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.98666669"
+         transform="rotate(-7.6949523)" />
+      <circle
+         r="21.881891"
+         cy="-91.679428"
+         cx="49.781734"
+         id="circle95591"
+         style="fill:#5fd38d;fill-opacity:1;stroke:#217844;stroke-width:2.64583325;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         transform="rotate(-7.6949523)" />
+      <ellipse
+         cx="41.613091"
+         cy="-99.083954"
+         rx="5.16644"
+         ry="5.238483"
+         id="ellipse95593"
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.64583325;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.98666669"
+         transform="rotate(-7.6949523)" />
+      <path
+         style="fill:#536c67;fill-opacity:1;stroke:#374845;stroke-width:2.64583325;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 45.029091,-163.61115 c -3.969641,-0.33007 -7.788089,6.62858 -8.528031,15.54211 -0.194534,2.34335 -0.156859,4.58812 0.07651,6.63018 l 8.128724,0.30649 0.250953,-6.23468 c 0.739897,-8.91301 4.557518,-15.87141 8.526998,-15.54221 z m 8.64761,0.7259 c 2.684204,0.39291 4.818162,4.14372 5.525199,9.71153 l 0.0087,-0.004 c -0.689127,-5.40752 -2.767749,-9.31238 -5.533824,-9.70758 z"
+         id="path95597"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccccccccccc" />
+      <path
+         style="fill:#93a7ac;fill-opacity:1;stroke:#374845;stroke-width:2.64600015;stroke-linejoin:miter;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+         d="m 53.484242,-162.90926 c -3.969478,-0.32919 -7.787099,6.6292 -8.526998,15.54221 -0.191489,2.34076 -0.153849,4.67096 0.110307,6.82901 3.384726,-6.76427 8.07649,-9.71771 14.439778,-10.37558 -0.725036,-5.71197 -3.254583,-11.75928 -6.023087,-11.99564 z"
+         id="path95599"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccccc" />
+      <path
          sodipodi:nodetypes="ccccccc"
          inkscape:connector-curvature="0"
-         id="path95960"
-         d="m -225.16328,-388.76848 12.09841,12.48954 -8.56866,3.92888 2.51946,10.99282 -12.09841,-13.42497 8.56866,-3.18052 z"
-         style="fill:#b380ff;fill-opacity:1;stroke:#6600ff;stroke-width:2.64583325;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.9901962" />
+         id="path95601"
+         d="m 92.580887,-115.83328 c -3.95094,-0.50702 -8.075899,6.27423 -9.213162,15.14582 -1.137279,8.871587 1.143811,16.47393 5.094872,16.980005 l 8.415972,1.078866 c 3.950841,0.506305 8.075491,-6.274694 9.212701,-15.14588 1.13723,-8.871191 -1.1436,-16.473341 -5.09441,-16.979951 z"
+         style="fill:#536c67;fill-opacity:1;stroke:#374845;stroke-width:2.64583325;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
       <ellipse
-         inkscape:export-ydpi="96"
-         inkscape:export-xdpi="96"
-         inkscape:export-filename="C:\Dev\ggj2019\GlobalGameJam2019\Assets\Game\Sprites\Characters\shell_lamp.png"
-         ry="24.303741"
-         rx="40.101173"
-         cy="-371.26559"
-         cx="-385.66861"
-         id="path95962"
-         style="fill:url(#radialGradient95970);fill-opacity:1;stroke:none;stroke-width:2.64583325;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.9901962;paint-order:markers stroke fill" />
+         ry="16.194324"
+         rx="7.212224"
+         cy="-110.47051"
+         cx="85.585632"
+         id="ellipse95603"
+         style="fill:#93a7ac;fill-opacity:1;stroke:#3b4c49;stroke-width:2.64583325;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         transform="rotate(7.3050477)" />
     </g>
     <g
-       id="g96270">
-      <g
-         inkscape:export-ydpi="96"
-         inkscape:export-xdpi="96"
-         inkscape:export-filename="C:\Dev\ggj2019\GlobalGameJam2019\Assets\Game\Sprites\Characters\shell_helmet.png"
-         id="g95605"
-         transform="translate(-691.86193,-362.18253)">
-        <path
-           style="fill:#536c67;fill-opacity:1;stroke:#374845;stroke-width:2.64583325;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="m 44.947262,-99.833123 c -18.217905,0.0276 -32.942083,6.615514 -32.901002,14.720682 v 24.705452 c 0.04132,8.105146 14.832269,14.663381 33.05022,14.654316 18.218424,-0.0091 32.976557,-6.582334 32.976467,-14.687714 l -4.4e-4,-0.06637 4.4e-4,-24.638659 -4.4e-4,-0.06679 c -0.08267,-8.105148 -14.90725,-14.648477 -33.125255,-14.620927 z"
-           id="path95583"
-           inkscape:connector-curvature="0"
-           sodipodi:nodetypes="cccscccccc" />
-        <path
-           sodipodi:nodetypes="ccccccc"
-           inkscape:connector-curvature="0"
-           id="path95585"
-           d="m -1.4186975,-128.45025 c -3.9509397,-0.50702 -8.0758988,6.27423 -9.2131625,15.14582 -1.137279,8.87159 1.1438101,16.473926 5.0948712,16.98 l 8.4159718,1.078866 c 3.9508477,0.506307 8.075497,-6.274686 9.212706,-15.145876 1.137228,-8.87118 -1.143599,-16.47333 -5.094411,-16.97994 z"
-           style="fill:#536c67;fill-opacity:1;stroke:#374845;stroke-width:2.64583325;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-        <path
-           inkscape:connector-curvature="0"
-           style="fill:#6f8a91;fill-opacity:1;stroke:#374548;stroke-width:2.64583325;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.98666669"
-           d="M 38.036252,-152.19406 A 48.268874,48.268874 0 0 0 -3.3348259,-97.896675 48.268874,48.268874 0 0 0 50.962552,-56.525598 48.268874,48.268874 0 0 0 92.333628,-110.82298 48.268874,48.268874 0 0 0 38.036252,-152.19406 Z"
-           id="path95587" />
-        <circle
-           transform="rotate(-7.6949523)"
-           style="fill:#536c67;fill-opacity:1;stroke:#374845;stroke-width:2.64583325;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.98666669"
-           id="circle95589"
-           cx="53.194309"
-           cy="-92.845825"
-           r="32.179249" />
-        <circle
-           transform="rotate(-7.6949523)"
-           style="fill:#5fd38d;fill-opacity:1;stroke:#217844;stroke-width:2.64583325;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="circle95591"
-           cx="49.781734"
-           cy="-91.679428"
-           r="21.881891" />
-        <ellipse
-           transform="rotate(-7.6949523)"
-           style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.64583325;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.98666669"
-           id="ellipse95593"
-           ry="5.238483"
-           rx="5.16644"
-           cy="-99.083954"
-           cx="41.613091" />
-        <path
-           sodipodi:nodetypes="cccccccccccc"
-           inkscape:connector-curvature="0"
-           id="path95597"
-           d="m 45.029091,-163.61115 c -3.969641,-0.33007 -7.788089,6.62858 -8.528031,15.54211 -0.194534,2.34335 -0.156859,4.58812 0.07651,6.63018 l 8.128724,0.30649 0.250953,-6.23468 c 0.739897,-8.91301 4.557518,-15.87141 8.526998,-15.54221 z m 8.64761,0.7259 c 2.684204,0.39291 4.818162,4.14372 5.525199,9.71153 l 0.0087,-0.004 c -0.689127,-5.40752 -2.767749,-9.31238 -5.533824,-9.70758 z"
-           style="fill:#536c67;fill-opacity:1;stroke:#374845;stroke-width:2.64583325;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-        <path
-           sodipodi:nodetypes="ccccc"
-           inkscape:connector-curvature="0"
-           id="path95599"
-           d="m 53.484242,-162.90926 c -3.969478,-0.32919 -7.787099,6.6292 -8.526998,15.54221 -0.191489,2.34076 -0.153849,4.67096 0.110307,6.82901 3.384726,-6.76427 8.07649,-9.71771 14.439778,-10.37558 -0.725036,-5.71197 -3.254583,-11.75928 -6.023087,-11.99564 z"
-           style="fill:#93a7ac;fill-opacity:1;stroke:#374845;stroke-width:2.64600015;stroke-linejoin:miter;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1" />
-        <path
-           style="fill:#536c67;fill-opacity:1;stroke:#374845;stroke-width:2.64583325;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="m 92.580887,-115.83328 c -3.95094,-0.50702 -8.075899,6.27423 -9.213162,15.14582 -1.137279,8.871587 1.143811,16.47393 5.094872,16.980005 l 8.415972,1.078866 c 3.950841,0.506305 8.075491,-6.274694 9.212701,-15.14588 1.13723,-8.871191 -1.1436,-16.473341 -5.09441,-16.979951 z"
-           id="path95601"
-           inkscape:connector-curvature="0"
-           sodipodi:nodetypes="ccccccc" />
-        <ellipse
-           transform="rotate(7.3050477)"
-           style="fill:#93a7ac;fill-opacity:1;stroke:#3b4c49;stroke-width:2.64583325;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="ellipse95603"
-           cx="85.585632"
-           cy="-110.47051"
-           rx="7.212224"
-           ry="16.194324" />
-      </g>
-      <g
-         inkscape:export-ydpi="96"
-         inkscape:export-xdpi="96"
-         inkscape:export-filename="C:\Dev\ggj2019\GlobalGameJam2019\Assets\Game\Sprites\Characters\shell_helmet.png"
-         style="stroke-width:1.58967412"
-         transform="matrix(0.62915519,0,0,0.6289643,-479.25636,-112.22501)"
-         id="g95978">
-        <path
-           style="fill:none;fill-opacity:1;stroke:#f7fdff;stroke-width:4.20601273;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.98666669"
-           d="m -384.96849,-520.5772 c -11.74859,-1.1e-4 -23.37369,14.25123 -23.37359,25.9998 1.9e-4,11.74838 12.67572,24.42367 24.42409,24.42356 11.74837,1.1e-4 26.52487,-11.09944 26.52503,-22.84782 1.4e-4,-11.74858 -15.82695,-27.57565 -27.57553,-27.57554 z"
-           id="path95972"
-           inkscape:connector-curvature="0"
-           sodipodi:nodetypes="ccccc" />
-        <path
-           style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:4.20601273;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.98666669"
-           d="m -374.4635,-509.80984 c -2.46595,-1.5e-4 -4.46503,1.67754 -2.88912,4.59621 3.78079,1.81873 7.6518,4.97085 7.3537,10.37338 1.94029,2.10085 4.20161,1.73667 4.20171,-0.65636 1.57591,-9.74666 -4.09956,-11.68688 -8.66629,-14.31323 z"
-           id="path95974"
-           inkscape:connector-curvature="0"
-           sodipodi:nodetypes="ccccc" />
-      </g>
+       id="g95978"
+       transform="matrix(0.62915519,0,0,0.6289643,-479.25636,-112.22501)"
+       style="stroke-width:1.58967412"
+       inkscape:export-filename="C:\Dev\ggj2019\GlobalGameJam2019\Assets\Game\Sprites\Characters\shell_helmet.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path95972"
+         d="m -384.96849,-520.5772 c -11.74859,-1.1e-4 -23.37369,14.25123 -23.37359,25.9998 1.9e-4,11.74838 12.67572,24.42367 24.42409,24.42356 11.74837,1.1e-4 26.52487,-11.09944 26.52503,-22.84782 1.4e-4,-11.74858 -15.82695,-27.57565 -27.57553,-27.57554 z"
+         style="fill:none;fill-opacity:1;stroke:#f7fdff;stroke-width:4.20601273;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.98666669" />
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path95974"
+         d="m -374.4635,-509.80984 c -2.46595,-1.5e-4 -4.46503,1.67754 -2.88912,4.59621 3.78079,1.81873 7.6518,4.97085 7.3537,10.37338 1.94029,2.10085 4.20161,1.73667 4.20171,-0.65636 1.57591,-9.74666 -4.09956,-11.68688 -8.66629,-14.31323 z"
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:4.20601273;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.98666669" />
+    </g>
+    <g
+       inkscape:export-ydpi="96"
+       inkscape:export-xdpi="96"
+       inkscape:export-filename="C:\Dev\ggj2019\GlobalGameJam2019\Assets\Game\Particles\bubbles.png"
+       style="stroke-width:1.58967412"
+       transform="matrix(0.62915519,0,0,0.6289643,-60.177741,-255.90911)"
+       id="g96289">
+      <path
+         style="fill:none;fill-opacity:1;stroke:#f7fdff;stroke-width:4.20601273;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.98666669"
+         d="m -384.96849,-520.5772 c -11.74859,-1.1e-4 -23.37369,14.25123 -23.37359,25.9998 1.9e-4,11.74838 12.67572,24.42367 24.42409,24.42356 11.74837,1.1e-4 26.52487,-11.09944 26.52503,-22.84782 1.4e-4,-11.74858 -15.82695,-27.57565 -27.57553,-27.57554 z"
+         id="path96285"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccccc" />
+      <path
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:4.20601273;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.98666669"
+         d="m -374.4635,-509.80984 c -2.46595,-1.5e-4 -4.46503,1.67754 -2.88912,4.59621 3.78079,1.81873 7.6518,4.97085 7.3537,10.37338 1.94029,2.10085 4.20161,1.73667 4.20171,-0.65636 1.57591,-9.74666 -4.09956,-11.68688 -8.66629,-14.31323 z"
+         id="path96287"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccccc" />
     </g>
     <rect
        y="-50.133324"
