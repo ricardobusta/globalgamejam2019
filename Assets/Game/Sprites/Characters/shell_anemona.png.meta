@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: cfc7afe0ce9de4559ae692e7a4204308
+guid: 7d8fa9fb221484ef7ba7903b245c9242
 TextureImporter:
   fileIDToRecycleName:
-    21300000: shells_0
-    21300002: shells_1
-    21300004: shells_2
-    21300006: shells_3
-    21300008: shells_4
-    21300010: shells_5
-    21300012: shells_6
-    21300014: shells_7
-    21300016: shells_8
+    21300000: shell_anemona_0
+    21300002: shell_anemona_1
+    21300004: shell_anemona_2
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -126,190 +120,73 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: shells_0
-      rect:
-        serializedVersion: 2
-        x: 214
-        y: 1268
-        width: 132
-        height: 130
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b0b5fac588a1b406595fe2e537dc7cb0
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: shells_1
-      rect:
-        serializedVersion: 2
-        x: 291
-        y: 871
-        width: 455
-        height: 456
-      alignment: 9
-      pivot: {x: 0.4658267, y: 0.11127793}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -227.5, y: -68}
-        - {x: -225.5, y: 93}
-        - {x: -144.5, y: 179}
-        - {x: -66.5, y: 228}
-        - {x: 60.5, y: 228}
-        - {x: 227.5, y: 54}
-        - {x: 227.5, y: -88}
-        - {x: 132.5, y: -228}
-        - {x: -120.5, y: -228}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f3b295135e6ec436189d45ed208c62f9
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: shells_2
-      rect:
-        serializedVersion: 2
-        x: 886
-        y: 867
-        width: 360
-        height: 458
-      alignment: 9
-      pivot: {x: 0.5, y: 0.11637032}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 794cc0cd23e304b5ebf929b08b9be1c5
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: shells_3
-      rect:
-        serializedVersion: 2
-        x: 1322
-        y: 1166
-        width: 303
-        height: 183
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b6158d480f30d4eb9b2240071cd0448f
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: shells_4
-      rect:
-        serializedVersion: 2
-        x: 1446
-        y: 910
-        width: 86
-        height: 138
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 277dd845fa8f54201a0d97d4e0414002
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: shells_5
+      name: shell_anemona_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 370
-        width: 413
-        height: 387
+        y: 205
+        width: 450
+        height: 409
       alignment: 9
-      pivot: {x: 0.5, y: 0.18661152}
+      pivot: {x: 0.5045527, y: 0.08591564}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 932763d0bb329449dbb8f5a547495e1e
+      spriteID: f87caae4f923140599d8acd73f9dd07a
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shells_6
+      name: shell_anemona_1
       rect:
         serializedVersion: 2
-        x: 540
-        y: 315
-        width: 573
-        height: 521
-      alignment: 9
-      pivot: {x: 0.5054271, y: 0.112023935}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 20f69a91e44e24bfa9093e82a803ca21
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: shells_7
-      rect:
-        serializedVersion: 2
-        x: 522
+        x: 30
         y: 0
-        width: 296
-        height: 269
+        width: 222
+        height: 201
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: 111, y: -100.5}
+        - {x: -111, y: -100.5}
+        - {x: -111, y: 100.5}
+        - {x: 111, y: 100.5}
+        - {x: 111, y: 4.5}
+        - {x: 81, y: -12.5}
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f01f1b1a98d847a5a2bc37dbe95df2f
+      spriteID: c26fc7517ea124f3189c4973c581e448
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shells_8
+      name: shell_anemona_2
       rect:
         serializedVersion: 2
-        x: 815
-        y: 28
-        width: 447
-        height: 226
+        x: 246
+        y: 26
+        width: 347
+        height: 175
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -173.5, y: -87.5}
+        - {x: -173.5, y: -9.5}
+        - {x: -159.5, y: 3.5}
+        - {x: -173.5, y: 87.5}
+        - {x: 173.5, y: 87.5}
+        - {x: 173.5, y: -87.5}
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 357de76de80a442618642c8f288c70d6
+      spriteID: ee9d38f343afe43e9bdab2cf0f01027a
       vertices: []
       indices: 
       edges: []
@@ -317,7 +194,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 6109c3a26aa614a939f7b7fe3c559efd
+    spriteID: 92ffe6f099553472d948302e0da207e2
     vertices: []
     indices: 
     edges: []

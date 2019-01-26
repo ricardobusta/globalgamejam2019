@@ -1,10 +1,9 @@
 fileFormatVersion: 2
-guid: 12e57a425a0799842af3f1bdd726b878
+guid: 2a4a29159d833455c8a22e70ae823142
 TextureImporter:
   fileIDToRecycleName:
-    21300000: shell_lamp_0
-    21300002: shell_lamp_1
-    21300004: shell_lamp_2
+    21300000: shell_helmet_0
+    21300002: shell_helmet_1
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -120,53 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: shell_lamp_0
+      name: shell_helmet_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 148
-        width: 303
-        height: 184
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9b0d7c0d39ecc488d8881708c26e1275
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: shell_lamp_1
-      rect:
-        serializedVersion: 2
-        x: 344
         y: 0
-        width: 360
-        height: 457
-      alignment: 9
-      pivot: {x: 0.5021025, y: 0.06937976}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 46f698df6ecfd427faac23b730e58207
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: shell_lamp_2
-      rect:
-        serializedVersion: 2
-        x: 726
-        y: 185
-        width: 86
-        height: 138
+        width: 132
+        height: 130
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,7 +133,32 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42dcaf91e7c15474993e21c8806b4869
+      spriteID: cacf8ee5f18684d2ba3bc85ac0fc6d80
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shell_helmet_1
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 0
+        width: 454
+        height: 455
+      alignment: 9
+      pivot: {x: 0.47261068, y: 0.082933754}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -136, y: -227.5}
+        - {x: -227, y: -73.5}
+        - {x: -227, y: 227.5}
+        - {x: 227, y: 227.5}
+        - {x: 227, y: -227.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9ef76265ff9d4e81906552d9bdc8876
       vertices: []
       indices: 
       edges: []
@@ -182,7 +166,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 776f360e2be127545afcb4920452dc65
+    spriteID: e57f8a71dcdd14454b82d96957379c14
     vertices: []
     indices: 
     edges: []
