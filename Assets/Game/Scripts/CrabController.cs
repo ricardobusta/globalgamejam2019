@@ -75,6 +75,10 @@ namespace Game.Scripts
 
         private void SetShell(Shell shell)
         {
+            if (hasShell)
+            {
+                RemoveShell();
+            }
             shell.Activate(ShellAnchor,
                 () =>
                 {

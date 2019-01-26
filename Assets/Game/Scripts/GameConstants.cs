@@ -1,10 +1,10 @@
 namespace Game.Scripts
 {
-    using UnityEngine;
-
     public static class GameConstants
     {
-        public static readonly LayerMask GroundLayer = 1<<8;
-        public static readonly LayerMask ShellLayer = 1<<9;
+        public const int GroundLayer = 8;
+        public const int ShellLayer = 9;
+        public const int EnemyLayer = 10;
+        public const int DisabledShellLayer = 11;
     }
 }

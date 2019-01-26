@@ -3,12 +3,22 @@ namespace Game.Scripts
     using System;
     using DG.Tweening;
     using UnityEngine;
+    using UnityEngine.SocialPlatforms;
+    using Random = UnityEngine.Random;
 
+    [RequireComponent(typeof(Rigidbody2D))]
     public class Shell : MonoBehaviour
     {
         public Collider2D shellCollider;
 
         private Tweener tweener;
+
+        private new Rigidbody2D rigidbody;
+
+        private void Awake()
+        {
+            rigidbody = GetComponent<Rigidbody2D>();
+        }
 
         public void Activate(Transform target, Action afterActivation)
         {
@@ -28,7 +38,10 @@ namespace Game.Scripts
 
         public void Deactivate()
         {
+            gameObject.layer = GameConstants.DisabledShellLayer;
             shellCollider.enabled = true;
+            rigidbody.velocity = new Vector2(Random.Range(-2.0f, 2.0f), 4);
+            DOVirtual.DelayedCall(1, () => { gameObject.layer = GameConstants.ShellLayer; });
         }
     }
 }
