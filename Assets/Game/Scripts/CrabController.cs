@@ -13,7 +13,6 @@ namespace Game.Scripts {
 
         private Rigidbody2D body;
 
-        // Update is called once per frame
         public void Handle(float horizontalInput, float verticalInput) {
             var horizontalSpeed = horizontalInput * Speed;
             var jump = verticalInput * JumpSpeed;
