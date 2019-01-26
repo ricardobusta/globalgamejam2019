@@ -698,9 +698,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35355339"
-     inkscape:cx="-2346.2445"
-     inkscape:cy="2553.5364"
+     inkscape:zoom="0.6218471"
+     inkscape:cx="-851.95906"
+     inkscape:cy="-289.61265"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -941,26 +941,35 @@
     <path
        inkscape:export-ydpi="96"
        inkscape:export-xdpi="96"
-       inkscape:export-filename="D:\Projects\GlobalGameJam2019\Assets\Game\Sprites\crab2.png"
+       inkscape:export-filename="C:\Dev\ggj2019\GlobalGameJam2019\Assets\Game\Sprites\Characters\crab2.png"
        style="fill:#f9f9f9;stroke:#999999;stroke-width:2.64583325;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m -321.06869,279.76867 c 3.70943,-9.79253 4.08625,-19.43942 2.13816,-29.66692 l -15.50163,-9.6217 c -4.73778,3.81015 -5.81526,4.54825 -7.3141,8.52357 -2.67413,7.09249 4.6125,16.54966 7.58137,20.60881 2.24284,3.58545 4.04938,7.31713 5.61266,11.22532 l -0.26727,5.61266 4.54358,-3.74177 z"
+       d="m -403.50422,282.77727 c 3.70943,-9.79253 4.08625,-19.43942 2.13816,-29.66692 l -15.50163,-9.6217 c -4.73778,3.81015 -5.81526,4.54825 -7.3141,8.52357 -2.67413,7.09249 4.6125,16.54966 7.58137,20.60881 2.24284,3.58545 4.04938,7.31713 5.61266,11.22532 l -0.26727,5.61266 4.54358,-3.74177 z"
        id="path1447"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccsccccc" />
     <path
        inkscape:export-ydpi="96"
        inkscape:export-xdpi="96"
-       inkscape:export-filename="D:\Projects\GlobalGameJam2019\Assets\Game\Sprites\crab2.png"
+       inkscape:export-filename="C:\Dev\ggj2019\GlobalGameJam2019\Assets\Game\Sprites\Characters\crab2.png"
        style="fill:#f9f9f9;fill-opacity:1;stroke:#999999;stroke-width:2.64583325;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m -301.37702,280.98858 c 9.13197,-11.02626 19.77026,-25.13486 10.69077,-38.75408 l -18.17432,9.08716 c -2.62424,10.03849 1.8636,18.74454 3.20723,28.59784 z"
+       d="m -383.81255,283.99718 c 9.13197,-11.02626 19.77026,-25.13486 10.69077,-38.75408 l -18.17432,9.08716 c -2.62424,10.03849 1.8636,18.74454 3.20723,28.59784 z"
        id="path1449"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccc" />
+    <path
+       style="fill:#2ca089;fill-opacity:1;stroke:#165044;stroke-width:2.64583325;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m -151.13718,260.27527 v 8.33828 h 28.09901 v -8.33828 z"
+       id="ellipse96327"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Dev\ggj2019\GlobalGameJam2019\Assets\Game\Sprites\Characters\crab2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <g
        inkscape:export-ydpi="96"
        inkscape:export-xdpi="96"
-       inkscape:export-filename="D:\Projects\GlobalGameJam2019\Assets\Game\Sprites\crab2.png"
-       transform="translate(-36.35057,126.32001)"
+       inkscape:export-filename="C:\Dev\ggj2019\GlobalGameJam2019\Assets\Game\Sprites\Characters\crab2.png"
+       transform="translate(-113.06977,129.62947)"
        id="g1455"
        style="fill:#2ca089;stroke:#165044">
       <path
@@ -979,45 +988,36 @@
     <path
        inkscape:export-ydpi="96"
        inkscape:export-xdpi="96"
-       inkscape:export-filename="D:\Projects\GlobalGameJam2019\Assets\Game\Sprites\crab2.png"
+       inkscape:export-filename="C:\Dev\ggj2019\GlobalGameJam2019\Assets\Game\Sprites\Characters\crab2.png"
        style="fill:#2ca089;fill-opacity:1;stroke:#165044;stroke-width:2.64583325;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m -392.69527,284.28433 c 4.98297,-12.6609 17.02448,-15.30804 29.48214,-15.30804 l 7.55953,-6.99256 -5.66965,-5.48065 c -17.00087,-0.38978 -38.30468,7.6135 -31.37202,27.78125 z"
+       d="m -475.1308,287.29293 c 4.98297,-12.6609 17.02448,-15.30804 29.48214,-15.30804 l 7.55953,-6.99256 -5.66965,-5.48065 c -17.00087,-0.38978 -38.30468,7.6135 -31.37202,27.78125 z"
        id="path1457"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccc" />
     <ellipse
        inkscape:export-ydpi="96"
        inkscape:export-xdpi="96"
-       inkscape:export-filename="D:\Projects\GlobalGameJam2019\Assets\Game\Sprites\crab2.png"
+       inkscape:export-filename="C:\Dev\ggj2019\GlobalGameJam2019\Assets\Game\Sprites\Characters\crab2.png"
        style="fill:#2ca089;fill-opacity:1;stroke:#165044;stroke-width:2.64583325;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
        id="ellipse1459"
-       cx="-215.3651"
-       cy="240.57507"
+       cx="-297.69791"
+       cy="235.47845"
        rx="30.049107"
        ry="23.245535"
        transform="rotate(-5.6324038)" />
     <path
        inkscape:export-ydpi="96"
        inkscape:export-xdpi="96"
-       inkscape:export-filename="D:\Projects\GlobalGameJam2019\Assets\Game\Sprites\crab2.png"
-       style="fill:none;stroke:#165044;stroke-width:2.64583325;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m -148.52143,267.50788 c 0.87916,-8.62692 5.66782,-14.81958 10.01637,-2.45684"
-       id="path1461"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
-    <path
-       inkscape:export-ydpi="96"
-       inkscape:export-xdpi="96"
-       inkscape:export-filename="D:\Projects\GlobalGameJam2019\Assets\Game\Sprites\crab2.png"
+       inkscape:export-filename="C:\Dev\ggj2019\GlobalGameJam2019\Assets\Game\Sprites\Characters\crab2.png"
        inkscape:connector-curvature="0"
        id="path1463"
-       d="m -275.14811,254.43377 a 2.2913045,4.1621913 0 0 1 0.34313,2.18488 2.2913045,4.1621913 0 0 1 -2.29133,4.16254 2.2913045,4.1621913 0 0 1 -2.29133,-4.16254 2.2913045,4.1621913 0 0 1 0.008,-0.28474 4.1426778,6.8153729 0 0 0 -1.10588,4.62349 4.1426778,6.8153729 0 0 0 4.14238,6.81509 4.1426778,6.8153729 0 0 0 4.1429,-6.81509 4.1426778,6.8153729 0 0 0 -2.94762,-6.52363 z"
+       d="m -357.58364,257.44237 a 2.2913045,4.1621913 0 0 1 0.34313,2.18488 2.2913045,4.1621913 0 0 1 -2.29133,4.16254 2.2913045,4.1621913 0 0 1 -2.29133,-4.16254 2.2913045,4.1621913 0 0 1 0.008,-0.28474 4.1426778,6.8153729 0 0 0 -1.10588,4.62349 4.1426778,6.8153729 0 0 0 4.14238,6.81509 4.1426778,6.8153729 0 0 0 4.1429,-6.81509 4.1426778,6.8153729 0 0 0 -2.94762,-6.52363 z"
        style="fill:#aa0000;fill-opacity:1;stroke:#800000;stroke-width:2.64583325;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <g
        inkscape:export-ydpi="96"
        inkscape:export-xdpi="96"
-       inkscape:export-filename="D:\Projects\GlobalGameJam2019\Assets\Game\Sprites\crab2.png"
-       transform="translate(-110.82413,116.33606)"
+       inkscape:export-filename="C:\Dev\ggj2019\GlobalGameJam2019\Assets\Game\Sprites\Characters\crab2.png"
+       transform="translate(-193.25966,119.34466)"
        id="g1469"
        style="fill:#2ca089;stroke:#165044">
       <path
@@ -17944,5 +17944,195 @@ hNTOt+xrufEAAAAASUVORK5CYII=
        inkscape:export-filename="C:\Dev\ggj2019\GlobalGameJam2019\Assets\Game\Sprites\Scenario\background.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
+    <path
+       sodipodi:nodetypes="ccccc"
+       inkscape:connector-curvature="0"
+       id="path96339"
+       d="m -70.946716,152.8712 v 8.33828 h 28.099007 v -8.33828 z"
+       style="fill:#d35f5f;fill-opacity:1;stroke:#a02c2c;stroke-width:2.64583325;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="C:\Dev\ggj2019\GlobalGameJam2019\Assets\Game\Sprites\crab1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:#f2f2f2;stroke:#165044;stroke-width:2.64583325;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -237.67908,254.87966 22.7149,7.52148 -22.26361,4.36247 z"
+       id="path96341"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Dev\ggj2019\GlobalGameJam2019\Assets\Game\Sprites\Characters\crab2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#165044;stroke-width:1.32291663;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -232.26361,256.83524 v 8.42407"
+       id="path96345"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Dev\ggj2019\GlobalGameJam2019\Assets\Game\Sprites\Characters\crab2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#165044;stroke-width:1.32291663;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -227.60029,258.48997 -0.15042,6.16763"
+       id="path96347"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Dev\ggj2019\GlobalGameJam2019\Assets\Game\Sprites\Characters\crab2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#165044;stroke-width:1.32291663;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -236.7765,261.19771 17.29943,1.05301"
+       id="path96349"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Dev\ggj2019\GlobalGameJam2019\Assets\Game\Sprites\Characters\crab2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path96343"
+       d="m -237.67908,254.87966 22.7149,7.52148 -22.26361,4.36247 z"
+       style="fill:none;stroke:#165044;stroke-width:2.64583325;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="C:\Dev\ggj2019\GlobalGameJam2019\Assets\Game\Sprites\Characters\crab2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:#1a1a1a;stroke:#000000;stroke-width:2.64583325;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -117.05523,253.64017 34.889327,12.76439 37.44222,-11.91343 c 0.51244,17.77446 -26.78087,35.29234 -37.8677,17.87014 -16.35074,13.01906 -31.938377,8.82433 -34.463847,-18.7211 z"
+       id="path96351"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Dev\ggj2019\GlobalGameJam2019\Assets\Game\Sprites\Characters\crab2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -105.05947,258.02889 8.542127,21.19665 c 2.4934,-0.39555 5.11013,-1.32792 7.7928,-2.76884 l -4.70358,-14.17225 z m 43.428887,1.84175 -7.56078,2.40605 5.78826,16.14578 c 2.62038,-0.88635 5.18695,-2.26102 7.53959,-3.99666 z"
+       id="path96355"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Dev\ggj2019\GlobalGameJam2019\Assets\Game\Sprites\Characters\crab2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       sodipodi:nodetypes="ccccc"
+       inkscape:connector-curvature="0"
+       id="path96363"
+       d="m -117.05523,253.64017 34.889327,12.76439 37.44222,-11.91343 c 0.51244,17.77446 -26.78087,35.29234 -37.8677,17.87014 -16.35074,13.01906 -31.938377,8.82433 -34.463847,-18.7211 z"
+       style="fill:none;stroke:#000000;stroke-width:2.64583325;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="C:\Dev\ggj2019\GlobalGameJam2019\Assets\Game\Sprites\Characters\crab2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       sodipodi:nodetypes="cccsccccc"
+       inkscape:connector-curvature="0"
+       id="path96365"
+       d="m -403.50422,354.38185 c 3.70943,-9.79253 4.08625,-19.43942 2.13816,-29.66692 l -15.50163,-9.6217 c -4.73778,3.81015 -5.81526,4.54825 -7.3141,8.52357 -2.67413,7.09249 4.6125,16.54966 7.58137,20.60881 2.24284,3.58545 4.04938,7.31713 5.61266,11.22532 l -0.26727,5.61266 4.54358,-3.74177 z"
+       style="fill:#f9f9f9;stroke:#999999;stroke-width:2.64583325;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="C:\Dev\ggj2019\GlobalGameJam2019\Assets\Game\Sprites\Characters\crab2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       sodipodi:nodetypes="ccccc"
+       inkscape:connector-curvature="0"
+       id="path96367"
+       d="m -383.81255,355.60176 c 9.13197,-11.02626 19.77026,-25.13486 10.69077,-38.75408 l -18.17432,9.08716 c -2.62424,10.03849 1.8636,18.74454 3.20723,28.59784 z"
+       style="fill:#f9f9f9;fill-opacity:1;stroke:#999999;stroke-width:2.64583325;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="C:\Dev\ggj2019\GlobalGameJam2019\Assets\Game\Sprites\Characters\crab2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       inkscape:export-ydpi="96"
+       inkscape:export-xdpi="96"
+       inkscape:export-filename="C:\Dev\ggj2019\GlobalGameJam2019\Assets\Game\Sprites\Characters\crab2.png"
+       sodipodi:nodetypes="ccccc"
+       inkscape:connector-curvature="0"
+       id="path96369"
+       d="m -151.13718,331.87985 v 8.33828 h 28.09901 v -8.33828 z"
+       style="fill:#ff6600;fill-opacity:1;stroke:#aa4400;stroke-width:2.64583325;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none" />
+    <g
+       style="fill:#ff6600;stroke:#aa4400"
+       id="g96375"
+       transform="translate(-113.06977,201.23405)"
+       inkscape:export-filename="C:\Dev\ggj2019\GlobalGameJam2019\Assets\Game\Sprites\Characters\crab2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <path
+         style="fill:#ff6600;fill-opacity:1;stroke:#aa4400;stroke-width:2.64583325;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m -90.069826,127.81838 c 10.610617,-6.89051 21.123988,-6.95733 31.270536,0.80181 1.71251,4.80801 1.95314,3.90209 0.26727,8.28536 -10.380427,5.55986 -22.864314,6.94847 -32.339613,-1.06908 1.91068,-5.41172 0.836119,-5.84803 0.801807,-8.01809 z"
+         id="path96371"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccccc" />
+      <path
+         style="fill:#ff6600;fill-opacity:1;stroke:#aa4400;stroke-width:2.64583325;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:20;stroke-dasharray:none;stroke-opacity:1"
+         d="m -64.24949,131.21473 c 9.33078,-2.83117 14.31439,2.57562 18.01186,13.97617 -4.59906,-6.87541 -14.14419,-3.67117 -19.9629,-5.36145 -6.977675,-2.4676 -2.099247,-7.37942 1.95104,-8.61472 z"
+         id="path96373"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccc" />
+    </g>
+    <path
+       sodipodi:nodetypes="ccccc"
+       inkscape:connector-curvature="0"
+       id="path96377"
+       d="m -475.1308,358.89751 c 4.98297,-12.6609 17.02448,-15.30804 29.48214,-15.30804 l 7.55953,-6.99256 -5.66965,-5.48065 c -17.00087,-0.38978 -38.30468,7.6135 -31.37202,27.78125 z"
+       style="fill:#ff6600;fill-opacity:1;stroke:#aa4400;stroke-width:2.64583325;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="C:\Dev\ggj2019\GlobalGameJam2019\Assets\Game\Sprites\Characters\crab2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <ellipse
+       transform="rotate(-5.6324038)"
+       ry="23.245535"
+       rx="30.049107"
+       cy="306.73734"
+       cx="-304.72559"
+       id="ellipse96379"
+       style="fill:#ff6600;fill-opacity:1;stroke:#aa4400;stroke-width:2.64583325;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+       inkscape:export-filename="C:\Dev\ggj2019\GlobalGameJam2019\Assets\Game\Sprites\Characters\crab2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:#aa0000;fill-opacity:1;stroke:#800000;stroke-width:2.64583325;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -357.58364,329.04695 a 2.2913045,4.1621913 0 0 1 0.34313,2.18488 2.2913045,4.1621913 0 0 1 -2.29133,4.16254 2.2913045,4.1621913 0 0 1 -2.29133,-4.16254 2.2913045,4.1621913 0 0 1 0.008,-0.28474 4.1426778,6.8153729 0 0 0 -1.10588,4.62349 4.1426778,6.8153729 0 0 0 4.14238,6.81509 4.1426778,6.8153729 0 0 0 4.1429,-6.81509 4.1426778,6.8153729 0 0 0 -2.94762,-6.52363 z"
+       id="path96381"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Dev\ggj2019\GlobalGameJam2019\Assets\Game\Sprites\Characters\crab2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <g
+       style="fill:#ff6600;stroke:#aa4400"
+       id="g96387"
+       transform="translate(-193.25966,190.94924)"
+       inkscape:export-filename="C:\Dev\ggj2019\GlobalGameJam2019\Assets\Game\Sprites\Characters\crab2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <path
+         sodipodi:nodetypes="cccc"
+         inkscape:connector-curvature="0"
+         id="path96383"
+         d="m -127.68295,145.69185 c -0.12162,5.20192 0.2732,4.43258 -1.98148,7.95981 -8.30146,1.38965 -16.90526,-1.96487 -21.07289,-13.11651 1.42891,-18.90437 23.99893,-9.06134 23.05437,5.1567 z"
+         style="fill:#ff6600;fill-opacity:1;stroke:#aa4400;stroke-width:2.64583325;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="cccc"
+         inkscape:connector-curvature="0"
+         id="path96385"
+         d="m -130.68997,145.79008 c 9.71875,0.79044 12.37056,7.64884 11.62644,19.61087 -1.75515,-8.08345 -11.8102,-8.60551 -16.60269,-12.31314 -5.58534,-4.85602 0.75522,-7.63494 4.97625,-7.29773 z"
+         style="fill:#ff6600;fill-opacity:1;stroke:#aa4400;stroke-width:2.64583325;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:20;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <path
+       inkscape:export-ydpi="96"
+       inkscape:export-xdpi="96"
+       inkscape:export-filename="C:\Dev\ggj2019\GlobalGameJam2019\Assets\Game\Sprites\Characters\crab2.png"
+       inkscape:connector-curvature="0"
+       id="path96389"
+       d="m -237.67908,326.48424 22.7149,7.52148 -22.26361,4.36247 z"
+       style="fill:#f2f2f2;stroke:#165044;stroke-width:2.64583325;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       id="path96395"
+       style="fill:none;stroke:#aa4400;stroke-width:1.32291663;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -236.7765,332.80229 17.29943,1.05301 m -12.78654,-5.41548 v 8.42407 m 4.66332,-6.76934 -0.15042,6.16763" />
+    <path
+       inkscape:export-ydpi="96"
+       inkscape:export-xdpi="96"
+       inkscape:export-filename="C:\Dev\ggj2019\GlobalGameJam2019\Assets\Game\Sprites\Characters\crab2.png"
+       style="fill:none;stroke:#aa4400;stroke-width:2.64583325;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -237.67908,326.48424 22.7149,7.52148 -22.26361,4.36247 z"
+       id="path96397"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>
