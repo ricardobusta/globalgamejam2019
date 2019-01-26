@@ -6,10 +6,15 @@ namespace Game.Scripts {
         public float Speed = 5;
         public float JumpSpeed = 10;
 
+        public Transform Shell;
+        public Transform ShellAnchor;
+        
         [NaughtyAttributes.ReadOnly]
         public bool Grounded = false;
 
         public LayerMask GroundLayer = 8;
+
+        private bool hasShell = true;
 
         private Rigidbody2D body;
 
@@ -41,6 +46,14 @@ namespace Game.Scripts {
                         return;
                     }
                 }
+            }
+        }
+
+        private void Update()
+        {
+            if (hasShell)
+            {
+                Shell.position = ShellAnchor.position;
             }
         }
     }
