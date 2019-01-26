@@ -13,9 +13,9 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
+  - Ground
+  - Shell
+  - Enemy
   - 
   - 
   - 
@@ -40,6 +40,9 @@ TagManager:
   m_SortingLayers:
   - name: Scenario
     uniqueID: 2370756827
+    locked: 0
+  - name: Shells
+    uniqueID: 4080322525
     locked: 0
   - name: Default
     uniqueID: 0
