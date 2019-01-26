@@ -4,9 +4,11 @@ namespace Game.Scripts
 {
     using System;
 
-    [RequireComponent(typeof(Rigidbody2D))]
+    [RequireComponent(typeof(Rigidbody2D), typeof(Animator))]
     public class CrabController : MonoBehaviour
     {
+        private const int SpeedAnimationIndex = 0;
+
         public float Speed = 5;
         public float JumpSpeed = 10;
 
@@ -16,6 +18,7 @@ namespace Game.Scripts
         [NaughtyAttributes.ReadOnly] public bool Grounded = false;
 
         private Rigidbody2D body;
+        private Animator animator;
 
         private bool hasShell;
 
@@ -38,6 +41,7 @@ namespace Game.Scripts
             }
 
             body.velocity = new Vector2(horizontalSpeed, verticalSpeed);
+            animator.SetFloat("Speed", Mathf.Abs(horizontalSpeed));
             if (Math.Abs(horizontalInput) > 0.1f)
             {
                 transform.localScale = new Vector3(horizontalInput, 1, 1);
@@ -48,6 +52,7 @@ namespace Game.Scripts
         {
             body = GetComponent<Rigidbody2D>();
             hasShell = Shell != null;
+            animator = GetComponent<Animator>();
         }
 
         private void OnCollisionEnter2D(Collision2D other)
@@ -68,8 +73,7 @@ namespace Game.Scripts
             {
                 Debug.Log("Collide with shell");
                 //other.gameObject.SetActive(false);
-                var shell = other.gameObject.GetComponent<Shell>();
-                SetShell(shell);
+                SetShell(other.gameObject.GetComponent<Shell>());
             }
         }
 
@@ -79,10 +83,16 @@ namespace Game.Scripts
             {
                 RemoveShell();
             }
+
             shell.Activate(ShellAnchor,
                 () =>
                 {
                     hasShell = true;
+                    if (Shell != null)
+                    {
+                        Shell.Deactivate();
+                    }
+
                     Shell = shell;
                 });
         }
