@@ -12,13 +12,11 @@ namespace Game.Scripts
 
         public Shell Shell;
         public Transform ShellAnchor;
-
+        
+        [NaughtyAttributes.ReadOnly] public bool hasShell;
         [NaughtyAttributes.ReadOnly] public bool Grounded = false;
 
         private Rigidbody2D body;
-
-        private bool hasShell;
-
 
         public void Handle(float horizontalInput, float verticalInput)
         {
