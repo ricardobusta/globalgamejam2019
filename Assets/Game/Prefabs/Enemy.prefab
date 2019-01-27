@@ -686,6 +686,9 @@ MonoBehaviour:
   ShellAnchor: {fileID: 1043599817}
   hasShell: 0
   Grounded: 0
+  timeSinceJump: 0
+  Walking: 0
+  Anemone: {fileID: 5976539422602326500, guid: a05fa5b90e3d74f88939180449279ca5, type: 3}
 --- !u!114 &1299433138
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -27,9 +27,13 @@ namespace Game.Scripts
 
         public float timeSinceJump = 0;
 
+        public float dashRemaining = 0;
+        
         public event Action Died;
 
         public bool Walking;
+
+        public Rigidbody2D Anemone;
 
         public void Attack()
         {
@@ -48,6 +52,12 @@ namespace Game.Scripts
                     InvokeSpecial(Shell.Type);
                 }
             }
+        }
+
+        public void ThrowAnemone()
+        {
+            var anemone = Instantiate(Anemone, transform.position, Quaternion.identity);
+            anemone.velocity = new Vector2(transform.localScale.x*2, 4);
         }
 
         private void InvokeSpecial(Shell.ShellType shellType)
