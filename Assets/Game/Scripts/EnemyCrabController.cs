@@ -24,6 +24,8 @@ namespace Game.Scripts
         private double distanceToShell = float.MaxValue;
         private Vector3 closestShellPos = Vector3.zero;
 
+        public EnemyProjectile LaunchProjectilePrefab;
+
         private void Awake()
         {
             controller = GetComponent<CrabController>();
@@ -119,14 +121,26 @@ namespace Game.Scripts
 
         private void OnTriggerEnter2D(Collider2D other)
         {
+            // Kill by player punch
             if (other.gameObject.layer == GameConstants.PlayerLayer)
             {
                 controller.Die();
             }
 
+            // Kill by helmet power
             if (other.gameObject.layer == GameConstants.ShellLayer)
             {
                 controller.Die();
+                var transform1 = transform;
+                var projectile = Instantiate(LaunchProjectilePrefab, transform1.position, transform1.rotation);
+                projectile.direction = PlayerController.Instance.transform.localScale.x;
+            }
+
+            // Kill by helmet power
+            if (other.gameObject.layer == GameConstants.ProjectileLayer)
+            {
+                controller.Die();
+                other.gameObject.SetActive(false);
             }
         }
     }

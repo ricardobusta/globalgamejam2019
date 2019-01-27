@@ -700,6 +700,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   threshold: 2
   Jumping: 0
+  LaunchProjectilePrefab: {fileID: 7536583483604917348, guid: ed6fe547d4cc440699a40168ba77b765,
+    type: 3}
 --- !u!1 &5959766553297658524
 GameObject:
   m_ObjectHideFlags: 0
