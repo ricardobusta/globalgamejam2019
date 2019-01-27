@@ -31,7 +31,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: d869cdf8a97412e44965a64eb21c691e, type: 3}
-    totalSpriteSurfaceArea: 2532392
+    totalSpriteSurfaceArea: 2598995
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -71,6 +71,8 @@ SpriteAtlas:
   - {fileID: 21300010, guid: 7879962c1414e09408047c4f3bba8fdb, type: 3}
   - {fileID: 21300008, guid: 7879962c1414e09408047c4f3bba8fdb, type: 3}
   - {fileID: 21300000, guid: 5b0567bde7a7c40868a5e0235cbd26cc, type: 3}
+  - {fileID: 21300002, guid: 98dd9e8fdf47c864083af9b3ce534a2b, type: 3}
+  - {fileID: 21300000, guid: 98dd9e8fdf47c864083af9b3ce534a2b, type: 3}
   - {fileID: 21300000, guid: c8cf21dff3e454567bab019b9fba52ac, type: 3}
   m_PackedSpriteNamesToIndex:
   - shell_father
@@ -93,7 +95,7 @@ SpriteAtlas:
   - mother_crab
   - baby_crab
   - shell_baby
-  - shell_default_0
+  - shell_default
   - shell_player
   - shell_anemona_2
   - shell_anemona_3
@@ -109,6 +111,8 @@ SpriteAtlas:
   - crab1_5
   - crab1_4
   - father_crab
+  - headphones_1
+  - headphones_0
   - hud_face
   m_Tag: Characters
   m_IsVariant: 0
