@@ -123,6 +123,11 @@ namespace Game.Scripts
             {
                 controller.Die();
             }
+
+            if (other.gameObject.layer == GameConstants.ShellLayer)
+            {
+                controller.Die();
+            }
         }
     }
 }
