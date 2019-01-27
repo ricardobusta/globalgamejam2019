@@ -16,7 +16,7 @@ namespace Game.Scripts
         private Vector3 playerPos;
         private int[] directions = {0, -1, 0, 1};
         private int directionIndex;
-        
+
         protected CrabController controller;
         protected Tweener tweener;
 
@@ -67,17 +67,18 @@ namespace Game.Scripts
         {
             tweener?.Kill();
             controller.Speed = 0.9f;
-            
-            var pos = transform.position;            
+
+            var pos = transform.position;
             var delta = pos.x - targetPos.x;
             var horizontal = delta > 0 ? -1 : 1;
             horizontal = Math.Abs(delta) > 0.1 ? horizontal : 0;
-            
+
             var vertical = 0;
             if (Jumping)
             {
                 vertical = Random.Range(0f, 1f) > 0.95f ? 1 : 0;
             }
+
             controller.Handle(horizontal, vertical);
         }
 
@@ -86,10 +87,12 @@ namespace Game.Scripts
             var minDistance = float.MaxValue;
             foreach (var shell in shellList)
             {
-                if (shell.shellCollider.enabled) continue;
+                if (shell.shellCollider.enabled)
+                    continue;
 
                 var distance = Vector3.Distance(transform.position, shell.transform.position);
-                if (!(distance < minDistance)) continue;
+                if (!(distance < minDistance))
+                    continue;
 
                 minDistance = distance;
                 closestShellPos = shell.transform.position;
@@ -112,6 +115,14 @@ namespace Game.Scripts
             tweener = DOVirtual.Float(1, 0, duration, speed => { controller.Handle(directions[directionIndex], 0); });
 
             tweener.onComplete += () => tweener = null;
+        }
+
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            if (other.gameObject.layer == GameConstants.PlayerLayer)
+            {
+                controller.Die();
+            }
         }
     }
 }

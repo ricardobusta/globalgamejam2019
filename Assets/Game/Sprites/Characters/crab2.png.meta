@@ -10,6 +10,8 @@ TextureImporter:
     21300010: crab2_5
     21300012: crab2_6
     21300014: crab2_7
+    21300016: crab2_8
+    21300018: crab2_9
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -139,7 +141,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c22f202a24b37a4a80c8e6634a82ea4
+      spriteID: 21026ba5f35174c5ca892e2cf9a6b3b0
       vertices: []
       indices: 
       edges: []
@@ -159,7 +161,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 19379c6f877dc2a44b7a73c7017d9a7d
+      spriteID: f90dc08480df649dc99fb85c3c7ae619
       vertices: []
       indices: 
       edges: []
@@ -179,7 +181,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e135bb7a086386a45bd89701a570d929
+      spriteID: ee059ba63b56e4b86b9b3751ad48bd2b
       vertices: []
       indices: 
       edges: []
@@ -199,7 +201,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4eb1476992173914f96254db7ba9d59a
+      spriteID: 7f8dadf37315d49c780534f39d1e47a8
       vertices: []
       indices: 
       edges: []
@@ -219,7 +221,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ec5a89590efca646922a31bd84ec79c
+      spriteID: 0eb8854a3b1944ae98c046263f5c9310
       vertices: []
       indices: 
       edges: []
@@ -239,7 +241,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 270489f08e23cf4478cc2d8b102799f1
+      spriteID: ee66bacf8681044adb911c68f363f851
       vertices: []
       indices: 
       edges: []
@@ -248,10 +250,10 @@ TextureImporter:
       name: crab2_6
       rect:
         serializedVersion: 2
-        x: 927
-        y: 72
-        width: 49
-        height: 47
+        x: 902
+        y: 85
+        width: 111
+        height: 59
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -259,7 +261,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4291405a13bccb440a9d96896ab67f59
+      spriteID: 45aaccb93fc894de9beaaa71d9bdcb6f
       vertices: []
       indices: 
       edges: []
@@ -268,8 +270,8 @@ TextureImporter:
       name: crab2_7
       rect:
         serializedVersion: 2
-        x: 1007
-        y: 57
+        x: 1029
+        y: 56
         width: 180
         height: 96
       alignment: 0
@@ -279,7 +281,47 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db1fdfd851fcf0d40ac2d2c1083d5c09
+      spriteID: 02520aac9dd934768b0d78f534b7fc9d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crab2_8
+      rect:
+        serializedVersion: 2
+        x: 1229
+        y: 79
+        width: 117
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efc9da54fe5c146b88fa1a84de003a69
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crab2_9
+      rect:
+        serializedVersion: 2
+        x: 1357
+        y: 38
+        width: 285
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19ad2ef2176c84061b8924e5e7002ab3
       vertices: []
       indices: 
       edges: []

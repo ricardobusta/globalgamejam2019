@@ -8,7 +8,7 @@ namespace Game.Scripts
 
     [RequireComponent(typeof(Rigidbody2D))]
     public class Shell : MonoBehaviour
-    {
+    {   
         public Collider2D shellCollider;
 
         private static Tweener tweener;
@@ -43,6 +43,14 @@ namespace Game.Scripts
             rigidbody.velocity = new Vector2(Random.Range(-1.0f, 1.0f), 2);
             transform.DORotate(Vector3.zero, 0.5f);
             DOVirtual.DelayedCall(1, () => { gameObject.layer = GameConstants.ShellLayer; });
+        }
+
+        public enum ShellType
+        {
+            Basic,
+            Helmet,
+            Anemone,
+            
         }
     }
 }

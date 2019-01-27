@@ -7,6 +7,10 @@ namespace Game.Scripts
     [RequireComponent(typeof(Rigidbody2D), typeof(Animator))]
     public class CrabController : MonoBehaviour
     {
+        public Cooldown punchCooldown;
+
+        private float punchRemainingCooldown;
+
         private const int SpeedAnimationIndex = 0;
 
         public float Speed = 5;
@@ -14,12 +18,20 @@ namespace Game.Scripts
 
         public Shell Shell;
         public Transform ShellAnchor;
-        
+
         [NaughtyAttributes.ReadOnly] public bool hasShell;
         [NaughtyAttributes.ReadOnly] public bool Grounded = false;
 
         private Rigidbody2D body;
         private Animator animator;
+
+        public void Attack()
+        {
+            if (punchCooldown.Trigger())
+            {
+                animator.SetTrigger("Attack");
+            }
+        }
 
         public void Handle(float horizontalInput, float verticalInput)
         {
@@ -55,32 +67,34 @@ namespace Game.Scripts
 
         private void OnCollisionEnter2D(Collision2D other)
         {
-            if (Utils.LayerOnMask(other.collider.gameObject.layer, GameConstants.GroundLayer))
+            switch (other.collider.gameObject.layer)
             {
-                Debug.Log("Collide with ground");
-                foreach (var contact in other.contacts)
-                {
-                    if (contact.normal == Vector2.up)
+                case GameConstants.GroundLayer:
+                    Debug.Log("Collide with ground");
+                    foreach (var contact in other.contacts)
                     {
-                        Grounded = true;
-                        return;
+                        if (contact.normal == Vector2.up)
+                        {
+                            Grounded = true;
+                            return;
+                        }
                     }
-                }
-            }
-            else if (Utils.LayerOnMask(other.collider.gameObject.layer, GameConstants.ShellLayer))
-            {
-                Debug.Log("Collide with shell");
-                //other.gameObject.SetActive(false);
-                SetShell(other.gameObject.GetComponent<Shell>());
+
+                    break;
+                case GameConstants.ShellLayer:
+                    Debug.Log("Collide with shell");
+                    //other.gameObject.SetActive(false);
+                    SetShell(other.gameObject.GetComponent<Shell>());
+                    break;
+                case GameConstants.HazardLayer:
+                    Die();
+                    break;
             }
         }
 
         private void SetShell(Shell shell)
         {
-            if (hasShell)
-            {
-                RemoveShell();
-            }
+            RemoveShell();
 
             shell.Activate(ShellAnchor,
                 () =>
@@ -97,13 +111,24 @@ namespace Game.Scripts
 
         private void RemoveShell()
         {
-            hasShell = false;
-            Shell.Deactivate();
-            Shell = null;
+            if (hasShell)
+            {
+                hasShell = false;
+                Shell.Deactivate();
+                Shell = null;
+            }
+        }
+
+        public void Die()
+        {
+            RemoveShell();
+            gameObject.SetActive(false);
         }
 
         private void Update()
         {
+            punchCooldown.Update(Time.deltaTime);
+
             if (hasShell)
             {
                 var t = Shell.transform;
