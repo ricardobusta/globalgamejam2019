@@ -30,6 +30,8 @@ namespace Game.Scripts
         {
             controller = GetComponent<CrabController>();
             directionIndex = Random.Range(0, 3);
+
+            controller.Died += () => { SFXManager.PlaySound(SFXManager.SFX.damageEnemy); };
         }
 
         private void Update()

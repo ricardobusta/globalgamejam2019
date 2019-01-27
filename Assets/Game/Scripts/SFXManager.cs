@@ -12,6 +12,10 @@ public class SFXManager : MonoBehaviour
     public AudioSource HelmetWind;
     public AudioSource HelmetHit;
     public AudioSource PunchWind;
+    public AudioSource CollectShell;
+    public AudioSource DamageEnemy;
+    public AudioSource DashEletric;
+    public AudioSource ThrowAnemone;
 
     private static SFXManager instance;
 
@@ -69,6 +73,10 @@ public class SFXManager : MonoBehaviour
             {SFX.helmetWind, HelmetWind},
             {SFX.helmetHit, HelmetHit},
             {SFX.punchWind, PunchWind},
+            {SFX.collectShell, CollectShell},
+            {SFX.damageEnemy, DamageEnemy},
+            {SFX.dashEletric, DashEletric},
+            {SFX.throwAnemone, ThrowAnemone},
         };
     }
 
@@ -81,5 +89,9 @@ public class SFXManager : MonoBehaviour
         helmetWind,
         helmetHit,
         punchWind,
+        collectShell,
+        damageEnemy,
+        dashEletric,
+        throwAnemone,
     }
 }

@@ -28,7 +28,7 @@ namespace Game.Scripts
         public float timeSinceJump = 0;
 
         public float dashRemaining = 0;
-        
+
         public event Action Died;
 
         public bool Walking;
@@ -56,8 +56,9 @@ namespace Game.Scripts
 
         public void ThrowAnemone()
         {
+            SFXManager.PlaySound(SFXManager.SFX.throwAnemone);
             var anemone = Instantiate(Anemone, transform.position, Quaternion.identity);
-            anemone.velocity = new Vector2(transform.localScale.x*2, 4);
+            anemone.velocity = new Vector2(transform.localScale.x * 2, 4);
         }
 
         private void InvokeSpecial(Shell.ShellType shellType)
@@ -76,6 +77,7 @@ namespace Game.Scripts
                     break;
                 case Shell.ShellType.Lamp:
                     animator.SetTrigger("LampSpecial");
+                    dashRemaining = 2;
                     break;
                 default:
                     throw new ArgumentOutOfRangeException(nameof(shellType), shellType, null);
@@ -89,19 +91,28 @@ namespace Game.Scripts
 
             float verticalSpeed = 0;
 
-            if (Grounded && jump > 0)
+            if (dashRemaining <= 0)
             {
-                verticalSpeed = jump;
-                timeSinceJump = 0;
-                Grounded = false;
-                PlayJumpStart();
+                if (Grounded && jump > 0)
+                {
+                    verticalSpeed = jump;
+                    timeSinceJump = 0;
+                    Grounded = false;
+                    PlayJumpStart();
+                }
+                else
+                {
+                    verticalSpeed = body.velocity.y;
+                }
             }
             else
             {
-                verticalSpeed = body.velocity.y;
+                horizontalSpeed = transform.localScale.x * Speed * 2;
+                verticalSpeed = 0;
             }
 
-            Walking = Grounded && Mathf.Abs(horizontalSpeed) > 0.1f;
+            Walking = Grounded && dashRemaining <= 0 && Mathf.Abs(horizontalSpeed) > 0.1f;
+
 
             body.velocity = new Vector2(horizontalSpeed, verticalSpeed);
             animator.SetFloat("Speed", Mathf.Abs(horizontalSpeed));
@@ -134,6 +145,11 @@ namespace Game.Scripts
         public void PlayJumpEnd()
         {
             SFXManager.PlaySound(SFXManager.SFX.land);
+        }
+
+        public void PlayDashEletric()
+        {
+            SFXManager.PlaySound(SFXManager.SFX.dashEletric);
         }
 
         private void Awake()
@@ -190,6 +206,7 @@ namespace Game.Scripts
         {
             RemoveShell();
 
+            SFXManager.PlaySound(SFXManager.SFX.collectShell);
             shell.Activate(ShellAnchor,
                 () =>
                 {
@@ -225,6 +242,11 @@ namespace Game.Scripts
             punchCooldown.Update(Time.deltaTime);
 
             timeSinceJump += Time.deltaTime;
+
+            if (dashRemaining > 0)
+            {
+                dashRemaining -= Time.deltaTime;
+            }
 
             if (hasShell)
             {
