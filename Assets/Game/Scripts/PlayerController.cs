@@ -3,6 +3,7 @@
 namespace Game.Scripts
 {
     using System;
+    using UnityEngine.SceneManagement;
 
     [RequireComponent(typeof(CrabController))]
     public class PlayerController : MonoBehaviour
@@ -31,7 +32,11 @@ namespace Game.Scripts
         {
             controller = GetComponent<CrabController>();
 
-            controller.Died += () => { SFXManager.StopOnce(SFXManager.SFX.walk); };
+            controller.Died += () =>
+            {
+                SFXManager.StopOnce(SFXManager.SFX.walk);
+                SceneManager.LoadScene("Stage1");
+            };
         }
 
         // Update is called once per frame
