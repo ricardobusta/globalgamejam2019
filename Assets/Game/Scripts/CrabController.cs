@@ -67,6 +67,16 @@ namespace Game.Scripts
 
         private void OnCollisionEnter2D(Collision2D other)
         {
+            HandleCollision(other);
+        }
+
+        private void OnCollisionStay2D(Collision2D other)
+        {
+            HandleCollision(other);
+        }
+
+        private void HandleCollision(Collision2D other)
+        {
             switch (other.collider.gameObject.layer)
             {
                 case GameConstants.GroundLayer:
