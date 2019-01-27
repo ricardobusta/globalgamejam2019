@@ -31,15 +31,15 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: d869cdf8a97412e44965a64eb21c691e, type: 3}
-    totalSpriteSurfaceArea: 1947447
+    totalSpriteSurfaceArea: 2532392
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
-  - {fileID: 21300000, guid: 4f6838a1d59ea9a4e9bf7bb8eae06261, type: 3}
+  - {fileID: 21300000, guid: 628af8011a2f942a4b83498da2ef010d, type: 3}
   - {fileID: 21300002, guid: 12e57a425a0799842af3f1bdd726b878, type: 3}
   - {fileID: 21300000, guid: 12e57a425a0799842af3f1bdd726b878, type: 3}
   - {fileID: 21300004, guid: 12e57a425a0799842af3f1bdd726b878, type: 3}
-  - {fileID: 21300000, guid: 892b1fe4e296d9241b8036145ecc0977, type: 3}
+  - {fileID: 21300000, guid: 98912ff37482849d3a5fc217832914eb, type: 3}
   - {fileID: 21300000, guid: 2a4a29159d833455c8a22e70ae823142, type: 3}
   - {fileID: 21300002, guid: 2a4a29159d833455c8a22e70ae823142, type: 3}
   - {fileID: 21300008, guid: f661bdc585f8e664dba6703c991c6dc1, type: 3}
@@ -52,8 +52,11 @@ SpriteAtlas:
   - {fileID: 21300006, guid: f661bdc585f8e664dba6703c991c6dc1, type: 3}
   - {fileID: 21300016, guid: f661bdc585f8e664dba6703c991c6dc1, type: 3}
   - {fileID: 21300018, guid: f661bdc585f8e664dba6703c991c6dc1, type: 3}
-  - {fileID: 21300000, guid: cd7cfbd9173889b438654ac376af2c68, type: 3}
+  - {fileID: 21300000, guid: b7f30f069dcff4556a3e218889d62810, type: 3}
+  - {fileID: 21300000, guid: 1b183467d84514a7f99795513e0dff76, type: 3}
+  - {fileID: 21300000, guid: ed16bda7205dc4e6a97e32ce6bd27af2, type: 3}
   - {fileID: 21300000, guid: 5a70472aef580c6458ea6b4f30389d70, type: 3}
+  - {fileID: 21300000, guid: a7894c2ae2df44367a40db814fe961bb, type: 3}
   - {fileID: 21300004, guid: 7d8fa9fb221484ef7ba7903b245c9242, type: 3}
   - {fileID: 21300006, guid: 7d8fa9fb221484ef7ba7903b245c9242, type: 3}
   - {fileID: 21300000, guid: 7d8fa9fb221484ef7ba7903b245c9242, type: 3}
@@ -67,13 +70,14 @@ SpriteAtlas:
   - {fileID: 21300012, guid: 7879962c1414e09408047c4f3bba8fdb, type: 3}
   - {fileID: 21300010, guid: 7879962c1414e09408047c4f3bba8fdb, type: 3}
   - {fileID: 21300008, guid: 7879962c1414e09408047c4f3bba8fdb, type: 3}
+  - {fileID: 21300000, guid: 5b0567bde7a7c40868a5e0235cbd26cc, type: 3}
   - {fileID: 21300000, guid: c8cf21dff3e454567bab019b9fba52ac, type: 3}
   m_PackedSpriteNamesToIndex:
-  - father_crab
+  - shell_father
   - shell_lamp_1
   - shell_lamp_0
   - shell_lamp_2
-  - mother_crab
+  - shell_mother
   - shell_helmet_0
   - shell_helmet_1
   - crab2_4
@@ -86,8 +90,11 @@ SpriteAtlas:
   - crab2_3
   - crab2_8
   - crab2_9
+  - mother_crab
   - baby_crab
+  - shell_baby
   - shell_default_0
+  - shell_player
   - shell_anemona_2
   - shell_anemona_3
   - shell_anemona_0
@@ -101,6 +108,7 @@ SpriteAtlas:
   - crab1_6
   - crab1_5
   - crab1_4
+  - father_crab
   - hud_face
   m_Tag: Characters
   m_IsVariant: 0

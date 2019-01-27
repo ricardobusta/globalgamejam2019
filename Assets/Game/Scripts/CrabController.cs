@@ -77,7 +77,7 @@ namespace Game.Scripts
                     break;
                 case Shell.ShellType.Lamp:
                     animator.SetTrigger("LampSpecial");
-                    dashRemaining = 2;
+                    dashRemaining = 5.0f/6.0f;
                     break;
                 default:
                     throw new ArgumentOutOfRangeException(nameof(shellType), shellType, null);
@@ -93,6 +93,7 @@ namespace Game.Scripts
 
             if (dashRemaining <= 0)
             {
+                body.gravityScale = 1;
                 if (Grounded && jump > 0)
                 {
                     verticalSpeed = jump;
@@ -107,12 +108,12 @@ namespace Game.Scripts
             }
             else
             {
+                body.gravityScale = 0;
                 horizontalSpeed = transform.localScale.x * Speed * 2;
                 verticalSpeed = 0;
             }
 
             Walking = Grounded && dashRemaining <= 0 && Mathf.Abs(horizontalSpeed) > 0.1f;
-
 
             body.velocity = new Vector2(horizontalSpeed, verticalSpeed);
             animator.SetFloat("Speed", Mathf.Abs(horizontalSpeed));
