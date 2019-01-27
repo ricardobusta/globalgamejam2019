@@ -8,12 +8,16 @@ namespace Game.Scripts
 
     [RequireComponent(typeof(Rigidbody2D))]
     public class Shell : MonoBehaviour
-    {   
+    {
         public Collider2D shellCollider;
 
         private static Tweener tweener;
 
         private new Rigidbody2D rigidbody;
+
+        public ShellType Type;
+
+        public Cooldown SpecialCooldown;
 
         private void Awake()
         {
@@ -45,12 +49,17 @@ namespace Game.Scripts
             DOVirtual.DelayedCall(1, () => { gameObject.layer = GameConstants.ShellLayer; });
         }
 
+        private void Update()
+        {
+            SpecialCooldown.Update(Time.deltaTime);
+        }
+
         public enum ShellType
         {
             Basic,
             Helmet,
             Anemone,
-            
+            Lamp
         }
     }
 }

@@ -36,10 +36,16 @@ namespace Game.Scripts
             var horizontalInput = Input.GetAxisRaw("Horizontal");
             var verticalInput = Input.GetAxisRaw("Vertical");
             var attackInput = Input.GetButtonDown("Fire1");
+            var specialInput = Input.GetButtonDown("Fire2");
 
             if (attackInput)
             {
                 controller.Attack();
+            }
+
+            if (specialInput)
+            {
+                controller.Special();
             }
 
             controller.Handle(horizontalInput, JumpAxisDown(verticalInput));

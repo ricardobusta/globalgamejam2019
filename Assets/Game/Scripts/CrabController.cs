@@ -33,6 +33,35 @@ namespace Game.Scripts
             }
         }
 
+        public void Special()
+        {
+            if (hasShell)
+            {
+                if (Shell.SpecialCooldown.Trigger())
+                {
+                    InvokeSpecial(Shell.Type);
+                }
+            }
+        }
+
+        private void InvokeSpecial(Shell.ShellType shellType)
+        {
+            Debug.Log("Special");
+            switch (shellType)
+            {
+                case Shell.ShellType.Basic:
+                    break;
+                case Shell.ShellType.Helmet:
+                    break;
+                case Shell.ShellType.Anemone:
+                    break;
+                case Shell.ShellType.Lamp:
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException(nameof(shellType), shellType, null);
+            }
+        }
+
         public void Handle(float horizontalInput, float verticalInput)
         {
             var horizontalSpeed = horizontalInput * Speed;
