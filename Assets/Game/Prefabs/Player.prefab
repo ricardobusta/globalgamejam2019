@@ -69,7 +69,7 @@ SpriteRenderer:
   m_SortingLayerID: -214644771
   m_SortingLayer: -1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300002, guid: 2a4a29159d833455c8a22e70ae823142, type: 3}
+  m_Sprite: {fileID: 21300002, guid: 12e57a425a0799842af3f1bdd726b878, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -87,7 +87,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1043599816}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -96,8 +96,8 @@ BoxCollider2D:
   m_Offset: {x: -0.012951948, y: 0.08560837}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.47261068, y: 0.082933754}
-    oldSize: {x: 0.454, y: 0.455}
+    pivot: {x: 0.5021025, y: 0.06937976}
+    oldSize: {x: 0.36, y: 0.457}
     newSize: {x: 0.412, y: 0.387}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -726,6 +726,7 @@ MonoBehaviour:
   hasShell: 0
   Grounded: 0
   timeSinceJump: 0
+  dashRemaining: 0
   Walking: 0
   Anemone: {fileID: 5976539422602326500, guid: a05fa5b90e3d74f88939180449279ca5, type: 3}
 --- !u!1 &5959766553297658524
