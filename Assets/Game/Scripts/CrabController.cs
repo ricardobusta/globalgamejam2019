@@ -56,8 +56,10 @@ namespace Game.Scripts
                     animator.SetTrigger("HelmetSpecial");
                     break;
                 case Shell.ShellType.Anemone:
+                    animator.SetTrigger("AnemoneSpecial");
                     break;
                 case Shell.ShellType.Lamp:
+                    animator.SetTrigger("LampSpecial");
                     break;
                 default:
                     throw new ArgumentOutOfRangeException(nameof(shellType), shellType, null);

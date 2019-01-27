@@ -31,7 +31,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: d869cdf8a97412e44965a64eb21c691e, type: 3}
-    totalSpriteSurfaceArea: 1229289
+    totalSpriteSurfaceArea: 1331591
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -52,6 +52,7 @@ SpriteAtlas:
   - {fileID: 21300018, guid: f661bdc585f8e664dba6703c991c6dc1, type: 3}
   - {fileID: 21300000, guid: 5a70472aef580c6458ea6b4f30389d70, type: 3}
   - {fileID: 21300004, guid: 7d8fa9fb221484ef7ba7903b245c9242, type: 3}
+  - {fileID: 21300006, guid: 7d8fa9fb221484ef7ba7903b245c9242, type: 3}
   - {fileID: 21300000, guid: 7d8fa9fb221484ef7ba7903b245c9242, type: 3}
   - {fileID: 21300002, guid: 7d8fa9fb221484ef7ba7903b245c9242, type: 3}
   - {fileID: 21300016, guid: 7879962c1414e09408047c4f3bba8fdb, type: 3}
@@ -63,6 +64,7 @@ SpriteAtlas:
   - {fileID: 21300012, guid: 7879962c1414e09408047c4f3bba8fdb, type: 3}
   - {fileID: 21300010, guid: 7879962c1414e09408047c4f3bba8fdb, type: 3}
   - {fileID: 21300008, guid: 7879962c1414e09408047c4f3bba8fdb, type: 3}
+  - {fileID: 21300000, guid: c8cf21dff3e454567bab019b9fba52ac, type: 3}
   m_PackedSpriteNamesToIndex:
   - shell_lamp_1
   - shell_lamp_0
@@ -81,6 +83,7 @@ SpriteAtlas:
   - crab2_9
   - shell_default_0
   - shell_anemona_2
+  - shell_anemona_3
   - shell_anemona_0
   - shell_anemona_1
   - crab1_8
@@ -92,5 +95,6 @@ SpriteAtlas:
   - crab1_6
   - crab1_5
   - crab1_4
+  - hud_face
   m_Tag: Characters
   m_IsVariant: 0

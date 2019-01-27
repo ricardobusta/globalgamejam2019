@@ -132,6 +132,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellCollider: {fileID: 657769528915798202}
-  Type: 0
+  Type: 1
   SpecialCooldown:
     max: 1
