@@ -3,18 +3,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SFXManager : MonoBehaviour {
+public class SFXManager : MonoBehaviour
+{
     public AudioSource Walk;
     public AudioSource Jump;
     public AudioSource Land;
+    public AudioSource Damage;
+    public AudioSource HelmetWind;
+    public AudioSource HelmetHit;
+    public AudioSource PunchWind;
 
-    private SFXManager instance;
+    private static SFXManager instance;
 
     private Dictionary<SFX, AudioSource> SFXMap;
 
-    public SFXManager Instance {
-        get {
-            if (instance == null) {
+    private static SFXManager Instance
+    {
+        get
+        {
+            if (instance == null)
+            {
                 instance = FindObjectOfType<SFXManager>();
             }
 
@@ -22,25 +30,56 @@ public class SFXManager : MonoBehaviour {
         }
     }
 
-    public void PlaySound(SFX sound) {
-        SFXMap[sound].Play();
+    public static void PlaySound(SFX sound)
+    {
+        Instance.SFXMap[sound].Play();
     }
 
-    public void StopSound(SFX sound) {
-        SFXMap[sound].Stop();
+    public static void PlayOnce(SFX sound)
+    {
+        var sfx = Instance.SFXMap[sound];
+        if (!sfx.isPlaying)
+        {
+            sfx.Play();
+        }
     }
 
-    private void Awake() {
-        SFXMap = new Dictionary<SFX, AudioSource>() {
+    public static void StopSound(SFX sound)
+    {
+        Instance.SFXMap[sound].Stop();
+    }
+
+    public static void StopOnce(SFX sound)
+    {
+        var sfx = Instance.SFXMap[sound];
+        if (sfx.isPlaying)
+        {
+            sfx.Stop();
+        }
+    }
+
+    private void Awake()
+    {
+        SFXMap = new Dictionary<SFX, AudioSource>()
+        {
             {SFX.walk, Walk},
             {SFX.jump, Jump},
             {SFX.land, Land},
+            {SFX.damage, Damage},
+            {SFX.helmetWind, HelmetWind},
+            {SFX.helmetHit, HelmetHit},
+            {SFX.punchWind, PunchWind},
         };
     }
 
-    public enum SFX {
+    public enum SFX
+    {
         walk,
         jump,
-        land
+        land,
+        damage,
+        helmetWind,
+        helmetHit,
+        punchWind,
     }
 }

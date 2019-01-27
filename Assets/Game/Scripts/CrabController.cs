@@ -25,6 +25,12 @@ namespace Game.Scripts
         private Rigidbody2D body;
         private Animator animator;
 
+        public float timeSinceJump = 0;
+
+        public event Action Died;
+
+        public bool Walking;
+
         public void Attack()
         {
             if (punchCooldown.Trigger())
@@ -76,12 +82,16 @@ namespace Game.Scripts
             if (Grounded && jump > 0)
             {
                 verticalSpeed = jump;
+                timeSinceJump = 0;
                 Grounded = false;
+                PlayJumpStart();
             }
             else
             {
                 verticalSpeed = body.velocity.y;
             }
+
+            Walking = Grounded && Mathf.Abs(horizontalSpeed) > 0.1f;
 
             body.velocity = new Vector2(horizontalSpeed, verticalSpeed);
             animator.SetFloat("Speed", Mathf.Abs(horizontalSpeed));
@@ -89,6 +99,31 @@ namespace Game.Scripts
             {
                 transform.localScale = new Vector3(horizontalInput, 1, 1);
             }
+        }
+
+        public void PlayHelmetWind()
+        {
+            SFXManager.PlaySound(SFXManager.SFX.helmetWind);
+        }
+
+        public void PlayHelmetHit()
+        {
+            SFXManager.PlaySound(SFXManager.SFX.helmetHit);
+        }
+
+        public void PlayPunchWind()
+        {
+            SFXManager.PlaySound(SFXManager.SFX.punchWind);
+        }
+
+        public void PlayJumpStart()
+        {
+            SFXManager.PlaySound(SFXManager.SFX.jump);
+        }
+
+        public void PlayJumpEnd()
+        {
+            SFXManager.PlaySound(SFXManager.SFX.land);
         }
 
         private void Awake()
@@ -113,12 +148,18 @@ namespace Game.Scripts
             switch (other.collider.gameObject.layer)
             {
                 case GameConstants.GroundLayer:
+                    if (Grounded || timeSinceJump < 0.5f)
+                    {
+                        return;
+                    }
+
                     Debug.Log("Collide with ground");
                     foreach (var contact in other.contacts)
                     {
                         if (contact.normal == Vector2.up)
                         {
                             Grounded = true;
+                            PlayJumpEnd();
                             return;
                         }
                     }
@@ -164,6 +205,7 @@ namespace Game.Scripts
 
         public void Die()
         {
+            Died?.Invoke();
             RemoveShell();
             gameObject.SetActive(false);
         }
@@ -171,6 +213,8 @@ namespace Game.Scripts
         private void Update()
         {
             punchCooldown.Update(Time.deltaTime);
+
+            timeSinceJump += Time.deltaTime;
 
             if (hasShell)
             {

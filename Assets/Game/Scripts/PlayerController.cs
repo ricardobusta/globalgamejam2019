@@ -2,6 +2,8 @@
 
 namespace Game.Scripts
 {
+    using System;
+
     [RequireComponent(typeof(CrabController))]
     public class PlayerController : MonoBehaviour
     {
@@ -28,6 +30,8 @@ namespace Game.Scripts
         private void Awake()
         {
             controller = GetComponent<CrabController>();
+
+            controller.Died += () => { SFXManager.StopOnce(SFXManager.SFX.walk); };
         }
 
         // Update is called once per frame
@@ -46,6 +50,15 @@ namespace Game.Scripts
             if (specialInput)
             {
                 controller.Special();
+            }
+
+            if (controller.Walking)
+            {
+                SFXManager.PlayOnce(SFXManager.SFX.walk);
+            }
+            else
+            {
+                SFXManager.StopOnce(SFXManager.SFX.walk);
             }
 
             controller.Handle(horizontalInput, JumpAxisDown(verticalInput));
