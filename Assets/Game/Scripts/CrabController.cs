@@ -52,6 +52,8 @@ namespace Game.Scripts
                 case Shell.ShellType.Basic:
                     break;
                 case Shell.ShellType.Helmet:
+                    Debug.Log("Helmet Special");
+                    animator.SetTrigger("HelmetSpecial");
                     break;
                 case Shell.ShellType.Anemone:
                     break;
