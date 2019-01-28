@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Cinematic : MonoBehaviour {
@@ -56,7 +57,9 @@ public class Cinematic : MonoBehaviour {
                                                 t => { Enemy.transform.position = new Vector3(t, 0.4f, 0); })
                                             .SetEase(Ease.Linear)
                                             .onComplete +=
-                                        () => { };
+                                        () => {
+                                            DOVirtual.DelayedCall(1, () => { SceneManager.LoadScene("Stage1"); });
+                                        };
                                 };
                             };
                         };
