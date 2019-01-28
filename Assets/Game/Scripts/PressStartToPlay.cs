@@ -16,7 +16,7 @@ public class PressStartToPlay : MonoBehaviour
         if (Math.Abs(h) > 0.1f || Math.Abs(v) > 0.1f || b)
         {
             FamilyManager.ResetData();
-            SceneManager.LoadScene("Stage1");
+            SceneManager.LoadScene("Cinematic");
         }
     }
 }
