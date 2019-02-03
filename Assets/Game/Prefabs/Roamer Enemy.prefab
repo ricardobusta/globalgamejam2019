@@ -702,10 +702,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8a0208e1b9b4481bbb4bb3d56b300fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  threshold: 2
-  Jumping: 0
+  Roam: 1
+  RoamSpeed: 0.5
+  RoamIdleTime: 1
+  Jump: 0
+  JumpIdleTime: 0
+  Chase: 0
+  AggroThreshold: 0
+  ChaseSpeed: 0
   LaunchProjectilePrefab: {fileID: 7536583483604917348, guid: ed6fe547d4cc440699a40168ba77b765,
     type: 3}
+  State: 0
 --- !u!1 &5959766553297658524
 GameObject:
   m_ObjectHideFlags: 0

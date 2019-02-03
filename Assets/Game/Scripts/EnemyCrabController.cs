@@ -5,145 +5,176 @@ using DG.Tweening;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-namespace Game.Scripts
-{
+namespace Game.Scripts {
     [RequireComponent(typeof(CrabController))]
-    public class EnemyCrabController : MonoBehaviour
-    {
-        public double threshold;
-        public bool Jumping = false;
+    public class EnemyCrabController : MonoBehaviour {
+        [NaughtyAttributes.BoxGroup("Behaviours")]
+        public bool Roam;
 
-        private Vector3 playerPos;
-        private int[] directions = {0, -1, 0, 1};
-        private int directionIndex;
+        [NaughtyAttributes.ShowIf("Roam")]
+        public float RoamSpeed;
+
+        [NaughtyAttributes.ShowIf("Roam")]
+        public float RoamIdleTime;
+
+        [NaughtyAttributes.BoxGroup("Behaviours")]
+        public bool Jump;
+
+        [NaughtyAttributes.ShowIf("Jump")]
+        public float JumpIdleTime;
+
+        [NaughtyAttributes.BoxGroup("Behaviours")]
+        public bool Chase;
+
+        [NaughtyAttributes.ShowIf("Chase")]
+        public float AggroThreshold;
+
+        [NaughtyAttributes.ShowIf("Chase")]
+        public float ChaseSpeed;
 
         protected CrabController controller;
-        protected Tweener tweener;
-
-        private IEnumerable<Shell> shellList = new List<Shell>();
-        private double distanceToShell = float.MaxValue;
-        private Vector3 closestShellPos = Vector3.zero;
 
         public EnemyProjectile LaunchProjectilePrefab;
 
-        private void Awake()
-        {
+        public enum EnemyState {
+            Idle,
+            Roaming,
+            Chasing,
+            Jumping
+        }
+
+        [NaughtyAttributes.ReadOnly]
+        public EnemyState State = EnemyState.Idle;
+
+        private Tween idleTween;
+
+        private float roamDirection;
+
+        private float wallDirection;
+
+        private float chaseDirection;
+
+        private void Awake() {
             controller = GetComponent<CrabController>();
-            directionIndex = Random.Range(0, 3);
 
             controller.Died += () => { SFXManager.PlaySound(SFXManager.SFX.damageEnemy); };
+
+            roamDirection = -1;
         }
 
-        private void Update()
-        {
-            Vector3 targetPos;
-            playerPos = PlayerController.Instance.transform.position;
+        private void Update() {
+            var playerPosition = PlayerController.Instance.transform.position;
 
-            if (!controller.hasShell)
-            {
-                distanceToShell = GetMinimumDistanceToShell();
-            }
-
-            double distance;
-            var distanceToPlayer = Vector3.Distance(transform.position, playerPos);
-            if (distanceToShell < distanceToPlayer)
-            {
-                distance = distanceToShell;
-                targetPos = closestShellPos;
-            }
-            else
-            {
-                distance = distanceToPlayer;
-                targetPos = playerPos;
+            if (Chase) {
+                var position = transform.position;
+                var distance = Vector3.Distance(playerPosition, position);
+                var xDistance = playerPosition.x - position.x;
+                if (distance < AggroThreshold && Mathf.Abs(xDistance) > 0.1f) {
+                    State = EnemyState.Chasing;
+                    chaseDirection = Mathf.Sign(xDistance);
+                } else {
+                    if (State == EnemyState.Chasing) {
+                        State = EnemyState.Idle;
+                    }
+                }
             }
 
-            if (distance < threshold)
-            {
-                AggroMovement(targetPos);
-            }
-            else
-            {
-                IdleMovement();
+            switch (State) {
+                case EnemyState.Idle:
+                    controller.Handle(0, 0);
+
+                    if (idleTween == null) {
+                        if (Roam) {
+                            idleTween = DOVirtual.DelayedCall(RoamIdleTime, () => {
+                                State = EnemyState.Roaming;
+                                idleTween = null;
+                            });
+                        } else if (Jump) {
+                            idleTween = DOVirtual.DelayedCall(JumpIdleTime, () => {
+                                State = EnemyState.Jumping;
+                                idleTween = null;
+                            });
+                        }
+                    }
+
+                    break;
+                case EnemyState.Roaming:
+                    controller.Speed = RoamSpeed;
+                    controller.Handle(roamDirection, 0);
+                    if (Math.Abs(wallDirection - roamDirection) < 0.1f) {
+                        FlipRoam();
+                    }
+
+                    break;
+                case EnemyState.Chasing:
+                    controller.Speed = ChaseSpeed;
+                    var vertical = Mathf.Abs(wallDirection) > 0.1f ? 1 : 0;
+                    var horizontal = chaseDirection;
+                    controller.Handle(horizontal, vertical);
+                    break;
+                case EnemyState.Jumping:
+                    controller.Handle(0, 1);
+                    State = EnemyState.Idle;
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException();
             }
         }
 
-        protected virtual void AggroMovement(Vector3 targetPos)
-        {
-            tweener?.Kill();
-            controller.Speed = 0.9f;
 
-            var pos = transform.position;
-            var delta = pos.x - targetPos.x;
-            var horizontal = delta > 0 ? -1 : 1;
-            horizontal = Math.Abs(delta) > 0.1 ? horizontal : 0;
-
-            var vertical = 0;
-            if (Jumping)
-            {
-                vertical = Random.Range(0f, 1f) > 0.95f ? 1 : 0;
-            }
-
-            controller.Handle(horizontal, vertical);
-        }
-
-        private float GetMinimumDistanceToShell()
-        {
-            var minDistance = float.MaxValue;
-            foreach (var shell in shellList)
-            {
-                if (shell.shellCollider.enabled)
-                    continue;
-
-                var distance = Vector3.Distance(transform.position, shell.transform.position);
-                if (!(distance < minDistance))
-                    continue;
-
-                minDistance = distance;
-                closestShellPos = shell.transform.position;
-            }
-
-            return minDistance;
-        }
-
-        private void IdleMovement()
-        {
-            if (tweener != null)
-            {
-                return;
-            }
-
-            controller.Speed = 0.6f;
-            directionIndex = (directionIndex + 1) % 4;
-
-            var duration = 1f + Random.Range(-0.4f, 0.4f);
-            tweener = DOVirtual.Float(1, 0, duration, speed => { controller.Handle(directions[directionIndex], 0); });
-
-            tweener.onComplete += () => tweener = null;
-        }
-
-        private void OnTriggerEnter2D(Collider2D other)
-        {
+        private void OnTriggerEnter2D(Collider2D other) {
             // Kill by player punch
-            if (other.gameObject.layer == GameConstants.PlayerLayer)
-            {
-                controller.Die();
-            }
+            switch (other.gameObject.layer) {
+                case GameConstants.PlayerLayer:
+                    controller.Die();
+                    break;
+                case GameConstants.ShellLayer:
+                    // Kill by helmet power
+                    controller.Die();
+                    var transform1 = transform;
+                    var projectile = Instantiate(LaunchProjectilePrefab, transform1.position, transform1.rotation);
+                    projectile.direction = PlayerController.Instance.transform.localScale.x;
+                    break;
+                case GameConstants.ProjectileLayer:
+                    // Kill by projectile
+                    controller.Die();
+                    other.gameObject.SetActive(false);
+                    break;
+                case GameConstants.EnemyBarrier:
+                    // Hit barrier while roaming
+                    if (State == EnemyState.Roaming) {
+                        wallDirection = roamDirection;
+                        controller.Speed = 0;
+                        FlipRoam();
+                    }
 
-            // Kill by helmet power
-            if (other.gameObject.layer == GameConstants.ShellLayer)
-            {
-                controller.Die();
-                var transform1 = transform;
-                var projectile = Instantiate(LaunchProjectilePrefab, transform1.position, transform1.rotation);
-                projectile.direction = PlayerController.Instance.transform.localScale.x;
+                    break;
             }
+        }
 
-            // Kill by helmet power
-            if (other.gameObject.layer == GameConstants.ProjectileLayer)
-            {
-                controller.Die();
-                other.gameObject.SetActive(false);
+        private void OnCollisionEnter2D(Collision2D other) {
+            HandleCollision(other);
+        }
+
+        private void OnCollisionStay2D(Collision2D other) {
+            HandleCollision(other);
+        }
+
+        private void HandleCollision(Collision2D other) {
+            if (other.collider.gameObject.layer == GameConstants.GroundLayer) {
+                wallDirection = 0;
+                foreach (var contact in other.contacts) {
+                    var contactX = contact.normal.x;
+                    if (Math.Abs(contactX) > 0.001f) {
+                        wallDirection = -contactX;
+                    }
+                }
             }
+        }
+
+        private void FlipRoam() {
+            roamDirection *= -1;
+            State = EnemyState.Idle;
         }
     }
 }

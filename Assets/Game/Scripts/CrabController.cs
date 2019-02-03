@@ -31,10 +31,18 @@ namespace Game.Scripts {
         public float dashRemaining = 0;
 
         public event Action Died;
+        public event Action<bool> GroundedStateChanged;
 
         public bool Walking;
 
         public Rigidbody2D Anemone;
+        private static readonly int AttackProp = Animator.StringToHash("Attack");
+        private static readonly int HelmetSpecial = Animator.StringToHash("HelmetSpecial");
+        private static readonly int AnemoneSpecial = Animator.StringToHash("AnemoneSpecial");
+        private static readonly int LampSpecial = Animator.StringToHash("LampSpecial");
+        private static readonly int SpeedProp = Animator.StringToHash("Speed");
+        private static readonly int VerticalSpeed = Animator.StringToHash("VerticalSpeed");
+        private static readonly int GroundedProp = Animator.StringToHash("Grounded");
 
         public void Attack() {
             if (hasShell) {
@@ -42,7 +50,7 @@ namespace Game.Scripts {
                     InvokeSpecial(Shell.Type);
                 }
             } else if (punchCooldown.Trigger()) {
-                animator.SetTrigger("Attack");
+                animator.SetTrigger(AttackProp);
             }
         }
 
@@ -59,13 +67,13 @@ namespace Game.Scripts {
                     break;
                 case Shell.ShellType.Helmet:
                     Debug.Log("Helmet Special");
-                    animator.SetTrigger("HelmetSpecial");
+                    animator.SetTrigger(HelmetSpecial);
                     break;
                 case Shell.ShellType.Anemone:
-                    animator.SetTrigger("AnemoneSpecial");
+                    animator.SetTrigger(AnemoneSpecial);
                     break;
                 case Shell.ShellType.Lamp:
-                    animator.SetTrigger("LampSpecial");
+                    animator.SetTrigger(LampSpecial);
                     dashRemaining = 5.0f / 6.0f;
                     break;
                 default:
@@ -84,8 +92,7 @@ namespace Game.Scripts {
                 if (Grounded && jump > 0) {
                     verticalSpeed = jump;
                     timeSinceJump = 0;
-                    Grounded = false;
-                    PlayJumpStart();
+                    SetGroundedState(false);
                 } else {
                     verticalSpeed = body.velocity.y;
                 }
@@ -98,7 +105,7 @@ namespace Game.Scripts {
             Walking = Grounded && dashRemaining <= 0 && Mathf.Abs(horizontalSpeed) > 0.1f;
 
             body.velocity = new Vector2(horizontalSpeed, verticalSpeed);
-            animator.SetFloat("Speed", Mathf.Abs(horizontalSpeed));
+            animator.SetFloat(SpeedProp, Mathf.Abs(horizontalSpeed));
             if (Math.Abs(horizontalInput) > 0.1f) {
                 transform.localScale = new Vector3(horizontalInput, 1, 1);
             }
@@ -116,14 +123,6 @@ namespace Game.Scripts {
             SFXManager.PlaySound(SFXManager.SFX.punchWind);
         }
 
-        public void PlayJumpStart() {
-            SFXManager.PlaySound(SFXManager.SFX.jump);
-        }
-
-        public void PlayJumpEnd() {
-            SFXManager.PlaySound(SFXManager.SFX.land);
-        }
-
         public void PlayDashEletric() {
             SFXManager.PlaySound(SFXManager.SFX.dashEletric);
         }
@@ -132,6 +131,12 @@ namespace Game.Scripts {
             body = GetComponent<Rigidbody2D>();
             hasShell = Shell != null;
             animator = GetComponent<Animator>();
+        }
+
+        private void Start() {
+            if (hasShell) {
+                Shell.ActivateInstant(ShellAnchor);
+            }
         }
 
         private void OnCollisionEnter2D(Collision2D other) {
@@ -149,18 +154,15 @@ namespace Game.Scripts {
                         return;
                     }
 
-                    Debug.Log("Collide with ground");
                     foreach (var contact in other.contacts) {
                         if (contact.normal == Vector2.up) {
-                            Grounded = true;
-                            PlayJumpEnd();
+                            SetGroundedState(true);
                             return;
                         }
                     }
 
                     break;
                 case GameConstants.ShellLayer:
-                    Debug.Log("Collide with shell");
                     //other.gameObject.SetActive(false);
                     SetShell(other.gameObject.GetComponent<Shell>());
                     break;
@@ -168,6 +170,12 @@ namespace Game.Scripts {
                     Die();
                     break;
             }
+        }
+
+        private void SetGroundedState(bool grounded) {
+            Grounded = grounded;
+            animator.SetBool(GroundedProp, grounded);
+            GroundedStateChanged?.Invoke(grounded);
         }
 
         private void SetShell(Shell shell) {
@@ -203,6 +211,10 @@ namespace Game.Scripts {
             punchCooldown.Update(Time.deltaTime);
 
             timeSinceJump += Time.deltaTime;
+
+            if (!Grounded) {
+                animator.SetFloat(VerticalSpeed, body.velocity.y);
+            }
 
             if (dashRemaining > 0) {
                 dashRemaining -= Time.deltaTime;

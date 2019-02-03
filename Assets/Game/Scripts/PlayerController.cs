@@ -37,6 +37,13 @@ namespace Game.Scripts
                 SFXManager.StopOnce(SFXManager.SFX.walk);
                 SceneManager.LoadScene("Stage1");
             };
+            controller.GroundedStateChanged += (grounded) => {
+                if (grounded) {
+                    PlayJumpEnd();
+                } else {
+                    PlayJumpStart();
+                }
+            };
         }
 
         // Update is called once per frame
@@ -61,6 +68,14 @@ namespace Game.Scripts
             }
 
             controller.Handle(horizontalInput, JumpAxisDown(verticalInput));
+        }
+        
+        public void PlayJumpStart() {
+            SFXManager.PlaySound(SFXManager.SFX.jump);
+        }
+
+        public void PlayJumpEnd() {
+            SFXManager.PlaySound(SFXManager.SFX.land);
         }
 
         private int JumpAxisDown(float verticalInput)

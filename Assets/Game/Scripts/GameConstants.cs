@@ -9,6 +9,7 @@ namespace Game.Scripts
         public const int DisabledShellLayer = 11;
         public const int HazardLayer = 12;
         public const int ProjectileLayer = 13;
+        public const int EnemyBarrier = 14;
 
         public const string motherShellName = "mother";
         public const string fatherShellName = "father";

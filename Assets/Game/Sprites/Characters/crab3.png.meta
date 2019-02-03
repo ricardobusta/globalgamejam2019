@@ -1,15 +1,17 @@
 fileFormatVersion: 2
-guid: 5b0567bde7a7c40868a5e0235cbd26cc
+guid: 99047cc0312676f46b0030a24569c8fc
 TextureImporter:
   fileIDToRecycleName:
-    21300000: father_crab_0
-    21300002: father_crab_1
-    21300004: father_crab_2
-    21300006: father_crab_3
-    21300008: father_crab_4
-    21300010: father_crab_5
-    21300012: father_crab_6
-    21300014: father_crab_7
+    21300000: crab3_0
+    21300002: crab3_1
+    21300004: crab3_2
+    21300006: crab3_3
+    21300008: crab3_4
+    21300010: crab3_5
+    21300012: crab3_6
+    21300014: crab3_7
+    21300016: crab3_8
+    21300018: crab3_9
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -89,17 +91,6 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-  - serializedVersion: 2
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -125,31 +116,31 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: father_crab_0
+      name: crab3_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 57
-        width: 263
-        height: 69
+        y: 50
+        width: 161
+        height: 115
       alignment: 9
-      pivot: {x: 0.4076902, y: -0.033837803}
+      pivot: {x: 0.6064774, y: 0.44202873}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48bdeea752894194f815e135916cca2c
+      spriteID: 1fb57fe018f9ef64e9d2ea6015b6352e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: father_crab_1
+      name: crab3_1
       rect:
         serializedVersion: 2
-        x: 292
-        y: 19
+        x: 174
+        y: 39
         width: 158
         height: 126
       alignment: 0
@@ -159,58 +150,58 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3056d8dd943e844418b26b6a23b568b1
+      spriteID: d0b231c5359ec0c4f9a733cef4cd6c62
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: father_crab_2
+      name: crab3_2
       rect:
         serializedVersion: 2
-        x: 475
-        y: 0
-        width: 116
-        height: 230
-      alignment: 9
-      pivot: {x: 0.5072174, y: 0.4017249}
+        x: 369
+        y: 40
+        width: 104
+        height: 185
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac17807f85aa3174fa2f43c5d965f53e
+      spriteID: 64cd0469a18a14d428418dbe65c7f834
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: father_crab_3
+      name: crab3_3
       rect:
         serializedVersion: 2
-        x: 597
-        y: 21
-        width: 105
-        height: 211
-      alignment: 9
-      pivot: {x: 0.5797294, y: 0.4047784}
+        x: 487
+        y: 60
+        width: 113
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e28d79879c544a439bf3d4e08549285
+      spriteID: b9637ca7fc037bd4a9591fe39505dde1
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: father_crab_4
+      name: crab3_4
       rect:
         serializedVersion: 2
-        x: 752
-        y: 77
-        width: 43
+        x: 621
+        y: 111
+        width: 38
         height: 62
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -219,19 +210,39 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 177b2b8ea120b0249a44d93fac5e0c97
+      spriteID: 1efaae52c119cfa4bada2472d0d33801
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: father_crab_5
+      name: crab3_5
       rect:
         serializedVersion: 2
-        x: 833
-        y: 43
-        width: 131
-        height: 145
+        x: 690
+        y: 0
+        width: 171
+        height: 203
+      alignment: 9
+      pivot: {x: 0.39974922, y: 0.6548203}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ad283b298aa7724389d6851789fa8be
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crab3_6
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 46
+        width: 237
+        height: 187
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -239,19 +250,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82af6bdfd2a7b4546bfc664b178edf81
+      spriteID: 176dee7570c96074b90eb0bedfc3e863
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: father_crab_6
+      name: crab3_7
       rect:
         serializedVersion: 2
-        x: 981
-        y: 39
-        width: 250
-        height: 195
+        x: 1125
+        y: 107
+        width: 89
+        height: 83
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -259,19 +270,39 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ae2c227bdbde93543b596bedb90841bf
+      spriteID: 690a3bcd280d69b4eaa6aac950ac143c
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: father_crab_7
+      name: crab3_8
       rect:
         serializedVersion: 2
-        x: 1244
-        y: 105
-        width: 180
-        height: 96
+        x: 1243
+        y: 51
+        width: 242
+        height: 137
+      alignment: 9
+      pivot: {x: 0.35045227, y: 0.67379206}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c2645498a837b141866b4ebb0120663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crab3_9
+      rect:
+        serializedVersion: 2
+        x: 1503
+        y: 109
+        width: 117
+        height: 43
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -279,7 +310,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e7b53c73579f0914682441d0c97491d4
+      spriteID: b68da13b12093d64eb5114902fa5ac8c
       vertices: []
       indices: 
       edges: []
@@ -287,7 +318,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 8b82258371fc0488e9d172f08d04e63e
+    spriteID: a121b2efb71db5344aac0d0513e8ce6a
     vertices: []
     indices: 
     edges: []
