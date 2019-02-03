@@ -31,7 +31,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: d869cdf8a97412e44965a64eb21c691e, type: 3}
-    totalSpriteSurfaceArea: 2747876
+    totalSpriteSurfaceArea: 2675928
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -53,8 +53,20 @@ SpriteAtlas:
   - {fileID: 21300006, guid: f661bdc585f8e664dba6703c991c6dc1, type: 3}
   - {fileID: 21300016, guid: f661bdc585f8e664dba6703c991c6dc1, type: 3}
   - {fileID: 21300018, guid: f661bdc585f8e664dba6703c991c6dc1, type: 3}
+  - {fileID: 21300004, guid: b7f30f069dcff4556a3e218889d62810, type: 3}
+  - {fileID: 21300006, guid: b7f30f069dcff4556a3e218889d62810, type: 3}
   - {fileID: 21300000, guid: b7f30f069dcff4556a3e218889d62810, type: 3}
+  - {fileID: 21300002, guid: b7f30f069dcff4556a3e218889d62810, type: 3}
+  - {fileID: 21300012, guid: b7f30f069dcff4556a3e218889d62810, type: 3}
+  - {fileID: 21300008, guid: b7f30f069dcff4556a3e218889d62810, type: 3}
+  - {fileID: 21300010, guid: b7f30f069dcff4556a3e218889d62810, type: 3}
+  - {fileID: 21300002, guid: 1b183467d84514a7f99795513e0dff76, type: 3}
   - {fileID: 21300000, guid: 1b183467d84514a7f99795513e0dff76, type: 3}
+  - {fileID: 21300006, guid: 1b183467d84514a7f99795513e0dff76, type: 3}
+  - {fileID: 21300004, guid: 1b183467d84514a7f99795513e0dff76, type: 3}
+  - {fileID: 21300010, guid: 1b183467d84514a7f99795513e0dff76, type: 3}
+  - {fileID: 21300008, guid: 1b183467d84514a7f99795513e0dff76, type: 3}
+  - {fileID: 21300012, guid: 1b183467d84514a7f99795513e0dff76, type: 3}
   - {fileID: 21300000, guid: ed16bda7205dc4e6a97e32ce6bd27af2, type: 3}
   - {fileID: 21300000, guid: 5a70472aef580c6458ea6b4f30389d70, type: 3}
   - {fileID: 21300000, guid: a7894c2ae2df44367a40db814fe961bb, type: 3}
@@ -71,6 +83,13 @@ SpriteAtlas:
   - {fileID: 21300012, guid: 7879962c1414e09408047c4f3bba8fdb, type: 3}
   - {fileID: 21300010, guid: 7879962c1414e09408047c4f3bba8fdb, type: 3}
   - {fileID: 21300008, guid: 7879962c1414e09408047c4f3bba8fdb, type: 3}
+  - {fileID: 21300014, guid: 5b0567bde7a7c40868a5e0235cbd26cc, type: 3}
+  - {fileID: 21300012, guid: 5b0567bde7a7c40868a5e0235cbd26cc, type: 3}
+  - {fileID: 21300010, guid: 5b0567bde7a7c40868a5e0235cbd26cc, type: 3}
+  - {fileID: 21300008, guid: 5b0567bde7a7c40868a5e0235cbd26cc, type: 3}
+  - {fileID: 21300006, guid: 5b0567bde7a7c40868a5e0235cbd26cc, type: 3}
+  - {fileID: 21300004, guid: 5b0567bde7a7c40868a5e0235cbd26cc, type: 3}
+  - {fileID: 21300002, guid: 5b0567bde7a7c40868a5e0235cbd26cc, type: 3}
   - {fileID: 21300000, guid: 5b0567bde7a7c40868a5e0235cbd26cc, type: 3}
   - {fileID: 21300002, guid: 98dd9e8fdf47c864083af9b3ce534a2b, type: 3}
   - {fileID: 21300000, guid: 98dd9e8fdf47c864083af9b3ce534a2b, type: 3}
@@ -94,8 +113,20 @@ SpriteAtlas:
   - crab2_3
   - crab2_8
   - crab2_9
-  - mother_crab
-  - baby_crab
+  - mother_crab_2
+  - mother_crab_3
+  - mother_crab_0
+  - mother_crab_1
+  - mother_crab_6
+  - mother_crab_4
+  - mother_crab_5
+  - baby_crab_1
+  - baby_crab_0
+  - baby_crab_3
+  - baby_crab_2
+  - baby_crab_5
+  - baby_crab_4
+  - baby_crab_6
   - shell_baby
   - shell_default
   - shell_player
@@ -112,7 +143,14 @@ SpriteAtlas:
   - crab1_6
   - crab1_5
   - crab1_4
-  - father_crab
+  - father_crab_7
+  - father_crab_6
+  - father_crab_5
+  - father_crab_4
+  - father_crab_3
+  - father_crab_2
+  - father_crab_1
+  - father_crab_0
   - headphones_1
   - headphones_0
   - hud_face

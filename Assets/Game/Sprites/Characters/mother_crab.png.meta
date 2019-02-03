@@ -1,7 +1,14 @@
 fileFormatVersion: 2
 guid: b7f30f069dcff4556a3e218889d62810
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: mother_crab_0
+    21300002: mother_crab_1
+    21300004: mother_crab_2
+    21300006: mother_crab_3
+    21300008: mother_crab_4
+    21300010: mother_crab_5
+    21300012: mother_crab_6
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -40,7 +47,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -115,7 +122,147 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: mother_crab_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 158
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30233c5a6105d6d448b80864e2e12bb0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mother_crab_1
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 2
+        width: 121
+        height: 197
+      alignment: 9
+      pivot: {x: 0.5863626, y: 0.4363472}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42abc5cc80cae16488d8c54c55b9720f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mother_crab_2
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 24
+        width: 116
+        height: 178
+      alignment: 9
+      pivot: {x: 0.37388268, y: 0.44129378}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c31af97a1d1b6fa44a7f4bf2de47d8b7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mother_crab_3
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 94
+        width: 43
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41bd6ac59d8a29a49ae86a02c267cc36
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mother_crab_4
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 49
+        width: 131
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49f2c9dd793ae814aaeb54b7f6b37d96
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mother_crab_5
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 0
+        width: 244
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3e3e3fcc24ceef41a563229568d67f7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mother_crab_6
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 58
+        width: 180
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91c950bfcbaf5264d9a852f9227c105e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

@@ -1,7 +1,14 @@
 fileFormatVersion: 2
 guid: 1b183467d84514a7f99795513e0dff76
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: baby_crab_0
+    21300002: baby_crab_1
+    21300004: baby_crab_2
+    21300006: baby_crab_3
+    21300008: baby_crab_4
+    21300010: baby_crab_5
+    21300012: baby_crab_6
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -40,7 +47,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -115,7 +122,147 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: baby_crab_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 29
+        width: 164
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6551b71d7f533dd4baa7b7f3a18644c6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baby_crab_1
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 0
+        width: 126
+        height: 240
+      alignment: 9
+      pivot: {x: 0.61240786, y: 0.42234948}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 837bde4c54656ec428856c2551c53d1f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baby_crab_2
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 21
+        width: 118
+        height: 230
+      alignment: 9
+      pivot: {x: 0.39260527, y: 0.3606344}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4737555d3731e2d4f896ae743a34e3fc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baby_crab_3
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 69
+        width: 90
+        height: 121
+      alignment: 9
+      pivot: {x: 0.40060696, y: 0.33366123}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0e6c59f8974955429365983629bc14b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baby_crab_4
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 49
+        width: 136
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b51d6cedf4009845a0309bb3a2fba82
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baby_crab_5
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 32
+        width: 243
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79c160cc98d570245b290741ce6f8ec9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baby_crab_6
+      rect:
+        serializedVersion: 2
+        x: 1082
+        y: 83
+        width: 186
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c269466de6de1a4a99e6fb18f4e9f37
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
