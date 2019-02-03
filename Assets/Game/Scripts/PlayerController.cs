@@ -2,7 +2,6 @@
 
 namespace Game.Scripts
 {
-    using System;
     using UnityEngine.SceneManagement;
 
     [RequireComponent(typeof(CrabController))]
@@ -97,7 +96,7 @@ namespace Game.Scripts
 
         private void OnCollisionEnter2D(Collision2D other)
         {
-            if (other.collider.gameObject.layer == GameConstants.EnemyLayer)
+            if (other.collider.gameObject.layer == GameConstants.ENEMY_LAYER)
             {
                 controller.Die();
             }

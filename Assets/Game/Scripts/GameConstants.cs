@@ -1,18 +1,16 @@
-namespace Game.Scripts
-{
-    public static class GameConstants
-    {
-        public const int PlayerLayer = 0;
-        public const int GroundLayer = 8;
-        public const int ShellLayer = 9;
-        public const int EnemyLayer = 10;
-        public const int DisabledShellLayer = 11;
-        public const int HazardLayer = 12;
-        public const int ProjectileLayer = 13;
-        public const int EnemyBarrier = 14;
+namespace Game.Scripts {
+    public static class GameConstants {
+        public const int PLAYER_LAYER = 0;
+        public const int GROUND_LAYER = 8;
+        public const int SHELL_LAYER = 9;
+        public const int ENEMY_LAYER = 10;
+        public const int DISABLED_SHELL_LAYER = 11;
+        public const int HAZARD_LAYER = 12;
+        public const int PROJECTILE_LAYER = 13;
+        public const int ENEMY_BARRIER = 14;
 
-        public const string motherShellName = "mother";
-        public const string fatherShellName = "father";
-        public const string sisterShellName = "sister";
+        public const string MOTHER_SHELL_NAME = "mother";
+        public const string FATHER_SHELL_NAME = "father";
+        public const string SISTER_SHELL_NAME = "sister";
     }
 }

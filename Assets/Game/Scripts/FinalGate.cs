@@ -24,7 +24,7 @@ namespace Game.Scripts
 
         private void OnCollisionEnter2D(Collision2D other)
         {
-            if (open && other.gameObject.layer == GameConstants.PlayerLayer)
+            if (open && other.gameObject.layer == GameConstants.PLAYER_LAYER)
             {
                 gameObject.SetActive(false);
             }

@@ -2,7 +2,6 @@ namespace Game.Scripts {
     using System;
     using DG.Tweening;
     using UnityEngine;
-    using UnityEngine.SocialPlatforms;
     using Random = UnityEngine.Random;
 
     [RequireComponent(typeof(Rigidbody2D))]
@@ -41,10 +40,10 @@ namespace Game.Scripts {
         public void Deactivate() {
             rigidbody.bodyType = RigidbodyType2D.Dynamic;
             shellCollider.enabled = true;
-            gameObject.layer = GameConstants.DisabledShellLayer;
+            gameObject.layer = GameConstants.DISABLED_SHELL_LAYER;
             rigidbody.velocity = new Vector2(Random.Range(-1.0f, 1.0f), 2);
             transform.DORotate(Vector3.zero, 0.5f);
-            DOVirtual.DelayedCall(1, () => { gameObject.layer = GameConstants.ShellLayer; });
+            DOVirtual.DelayedCall(1, () => { gameObject.layer = GameConstants.SHELL_LAYER; });
         }
 
         private void Update() {

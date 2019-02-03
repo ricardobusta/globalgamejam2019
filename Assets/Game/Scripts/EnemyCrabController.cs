@@ -1,9 +1,6 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
-using Random = UnityEngine.Random;
 
 namespace Game.Scripts {
     [RequireComponent(typeof(CrabController))]
@@ -125,22 +122,22 @@ namespace Game.Scripts {
         private void OnTriggerEnter2D(Collider2D other) {
             // Kill by player punch
             switch (other.gameObject.layer) {
-                case GameConstants.PlayerLayer:
+                case GameConstants.PLAYER_LAYER:
                     controller.Die();
                     break;
-                case GameConstants.ShellLayer:
+                case GameConstants.SHELL_LAYER:
                     // Kill by helmet power
                     controller.Die();
                     var transform1 = transform;
                     var projectile = Instantiate(LaunchProjectilePrefab, transform1.position, transform1.rotation);
                     projectile.direction = PlayerController.Instance.transform.localScale.x;
                     break;
-                case GameConstants.ProjectileLayer:
+                case GameConstants.PROJECTILE_LAYER:
                     // Kill by projectile
                     controller.Die();
                     other.gameObject.SetActive(false);
                     break;
-                case GameConstants.EnemyBarrier:
+                case GameConstants.ENEMY_BARRIER:
                     // Hit barrier while roaming
                     if (State == EnemyState.Roaming) {
                         wallDirection = roamDirection;
@@ -161,7 +158,7 @@ namespace Game.Scripts {
         }
 
         private void HandleCollision(Collision2D other) {
-            if (other.collider.gameObject.layer == GameConstants.GroundLayer) {
+            if (other.collider.gameObject.layer == GameConstants.GROUND_LAYER) {
                 wallDirection = 0;
                 foreach (var contact in other.contacts) {
                     var contactX = contact.normal.x;

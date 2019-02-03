@@ -149,7 +149,7 @@ namespace Game.Scripts {
 
         private void HandleCollision(Collision2D other) {
             switch (other.collider.gameObject.layer) {
-                case GameConstants.GroundLayer:
+                case GameConstants.GROUND_LAYER:
                     if (Grounded || timeSinceJump < 0.5f) {
                         return;
                     }
@@ -162,11 +162,11 @@ namespace Game.Scripts {
                     }
 
                     break;
-                case GameConstants.ShellLayer:
+                case GameConstants.SHELL_LAYER:
                     //other.gameObject.SetActive(false);
                     SetShell(other.gameObject.GetComponent<Shell>());
                     break;
-                case GameConstants.HazardLayer:
+                case GameConstants.HAZARD_LAYER:
                     Die();
                     break;
             }
