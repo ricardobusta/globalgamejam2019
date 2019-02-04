@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: stone bg
   m_EditorClassIdentifier: 
   m_Sprite: {fileID: 21300000, guid: 7680ad41d4c641043a116d9322be9841, type: 3}
-  m_Color: {r: 0.5471698, g: 0.5471698, b: 0.5471698, a: 1}
+  m_Color: {r: 0.3962264, g: 0.3962264, b: 0.3962264, a: 1}
   m_Transform:
     e00: 1
     e01: 0
