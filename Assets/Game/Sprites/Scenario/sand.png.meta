@@ -1,73 +1,201 @@
 fileFormatVersion: 2
 guid: 7680ad41d4c641043a116d9322be9841
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: sand_0
-    21300002: sand_1
-    21300004: sand_2
-    21300006: sand_3
-    21300008: sand_4
-    21300010: sand_5
-    21300012: sand_6
-    21300014: sand_7
-    21300016: sand_8
-    21300018: sand_9
-    21300020: sand_10
-    21300022: sand_11
-    21300024: sand_12
-    21300026: sand_13
-    21300028: sand_14
-    21300030: sand_15
-    21300032: sand_16
-    21300034: sand_17
-    21300036: sand_18
-    21300038: sand_19
-    21300040: sand_20
-    21300042: sand_21
-    21300044: sand_22
-    21300046: sand_23
-    21300048: sand_24
-    21300050: sand_25
-    21300052: sand_26
-    21300054: sand_27
-    21300056: sand_28
-    21300058: sand_29
-    21300060: sand_30
-    21300062: sand_31
-    21300064: sand_32
-    21300066: sand_33
-    21300068: sand_34
-    21300070: sand_35
-    21300072: sand_36
-    21300074: sand_37
-    21300076: sand_38
-    21300078: sand_39
-    21300080: sand_40
-    21300082: sand_41
-    21300084: sand_42
-    21300086: sand_43
-    21300088: sand_44
-    21300090: sand_45
-    21300092: sand_46
-    21300094: sand_47
-    21300096: sand_48
-    21300098: sand_49
-    21300100: sand_50
-    21300102: sand_51
-    21300104: sand_52
-    21300106: sand_53
-    21300108: sand_54
-    21300110: sand_55
-    21300112: sand_56
-    21300114: sand_57
-    21300116: sand_58
-    21300118: sand_59
-    21300120: sand_60
-    21300122: sand_61
-    21300124: sand_62
-    21300126: sand_63
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: sand_0
+  - first:
+      213: 21300002
+    second: sand_1
+  - first:
+      213: 21300004
+    second: sand_2
+  - first:
+      213: 21300006
+    second: sand_3
+  - first:
+      213: 21300008
+    second: sand_4
+  - first:
+      213: 21300010
+    second: sand_5
+  - first:
+      213: 21300012
+    second: sand_6
+  - first:
+      213: 21300014
+    second: sand_7
+  - first:
+      213: 21300016
+    second: sand_8
+  - first:
+      213: 21300018
+    second: sand_9
+  - first:
+      213: 21300020
+    second: sand_10
+  - first:
+      213: 21300022
+    second: sand_11
+  - first:
+      213: 21300024
+    second: sand_12
+  - first:
+      213: 21300026
+    second: sand_13
+  - first:
+      213: 21300028
+    second: sand_14
+  - first:
+      213: 21300030
+    second: sand_15
+  - first:
+      213: 21300032
+    second: sand_16
+  - first:
+      213: 21300034
+    second: sand_17
+  - first:
+      213: 21300036
+    second: sand_18
+  - first:
+      213: 21300038
+    second: sand_19
+  - first:
+      213: 21300040
+    second: sand_20
+  - first:
+      213: 21300042
+    second: sand_21
+  - first:
+      213: 21300044
+    second: sand_22
+  - first:
+      213: 21300046
+    second: sand_23
+  - first:
+      213: 21300048
+    second: sand_24
+  - first:
+      213: 21300050
+    second: sand_25
+  - first:
+      213: 21300052
+    second: sand_26
+  - first:
+      213: 21300054
+    second: sand_27
+  - first:
+      213: 21300056
+    second: sand_28
+  - first:
+      213: 21300058
+    second: sand_29
+  - first:
+      213: 21300060
+    second: sand_30
+  - first:
+      213: 21300062
+    second: sand_31
+  - first:
+      213: 21300064
+    second: sand_32
+  - first:
+      213: 21300066
+    second: sand_33
+  - first:
+      213: 21300068
+    second: sand_34
+  - first:
+      213: 21300070
+    second: sand_35
+  - first:
+      213: 21300072
+    second: sand_36
+  - first:
+      213: 21300074
+    second: sand_37
+  - first:
+      213: 21300076
+    second: sand_38
+  - first:
+      213: 21300078
+    second: sand_39
+  - first:
+      213: 21300080
+    second: sand_40
+  - first:
+      213: 21300082
+    second: sand_41
+  - first:
+      213: 21300084
+    second: sand_42
+  - first:
+      213: 21300086
+    second: sand_43
+  - first:
+      213: 21300088
+    second: sand_44
+  - first:
+      213: 21300090
+    second: sand_45
+  - first:
+      213: 21300092
+    second: sand_46
+  - first:
+      213: 21300094
+    second: sand_47
+  - first:
+      213: 21300096
+    second: sand_48
+  - first:
+      213: 21300098
+    second: sand_49
+  - first:
+      213: 21300100
+    second: sand_50
+  - first:
+      213: 21300102
+    second: sand_51
+  - first:
+      213: 21300104
+    second: sand_52
+  - first:
+      213: 21300106
+    second: sand_53
+  - first:
+      213: 21300108
+    second: sand_54
+  - first:
+      213: 21300110
+    second: sand_55
+  - first:
+      213: 21300112
+    second: sand_56
+  - first:
+      213: 21300114
+    second: sand_57
+  - first:
+      213: 21300116
+    second: sand_58
+  - first:
+      213: 21300118
+    second: sand_59
+  - first:
+      213: 21300120
+    second: sand_60
+  - first:
+      213: 21300122
+    second: sand_61
+  - first:
+      213: 21300124
+    second: sand_62
+  - first:
+      213: 21300126
+    second: sand_63
   externalObjects: {}
-  serializedVersion: 7
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -84,9 +212,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -95,12 +226,12 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -118,11 +249,17 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
-  - serializedVersion: 2
+  - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -132,8 +269,10 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -143,8 +282,10 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -154,8 +295,10 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
     buildTarget: iPhone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -165,8 +308,10 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -176,7 +321,22 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -196,6 +356,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: b69c590dbcfb24d439a7699d0143a4a6
+      internalID: 21300000
       vertices: []
       indices: 
       edges: []
@@ -216,6 +377,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: a6e6d5b77a34d974ebaf563560cd47a8
+      internalID: 21300002
       vertices: []
       indices: 
       edges: []
@@ -236,6 +398,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 4441103a14f4f2644af4e20e22bae13e
+      internalID: 21300004
       vertices: []
       indices: 
       edges: []
@@ -256,6 +419,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: c8b574bcb03240949aa86a5de52d2440
+      internalID: 21300006
       vertices: []
       indices: 
       edges: []
@@ -276,6 +440,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 031eaaf78efe1ac4dbf81198a72e9633
+      internalID: 21300008
       vertices: []
       indices: 
       edges: []
@@ -296,6 +461,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: c89339680b95a0f41bcaf35a64c0b307
+      internalID: 21300010
       vertices: []
       indices: 
       edges: []
@@ -316,6 +482,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 22ea0c3bfc252f6479453513a35b60a2
+      internalID: 21300012
       vertices: []
       indices: 
       edges: []
@@ -336,6 +503,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: bebaba5d301602343b0a10cb16c308fb
+      internalID: 21300014
       vertices: []
       indices: 
       edges: []
@@ -356,6 +524,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: f2d7cb7438212774bbbcbccffe0817b2
+      internalID: 21300016
       vertices: []
       indices: 
       edges: []
@@ -376,6 +545,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: bd3bd4b71b18c0c40acf67ff95cd1780
+      internalID: 21300018
       vertices: []
       indices: 
       edges: []
@@ -396,6 +566,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 91a3847b49771c34681930a4e28a6cb5
+      internalID: 21300020
       vertices: []
       indices: 
       edges: []
@@ -416,6 +587,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: de2db6314271c2b49b8e38ee9e457747
+      internalID: 21300022
       vertices: []
       indices: 
       edges: []
@@ -436,6 +608,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 87c251157164a284faeafc837141d0c5
+      internalID: 21300024
       vertices: []
       indices: 
       edges: []
@@ -456,6 +629,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: c8959e7e5e2ccf74797d363457c4c1b5
+      internalID: 21300026
       vertices: []
       indices: 
       edges: []
@@ -476,6 +650,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 0a4add9199f77894f88c2fea722dc393
+      internalID: 21300028
       vertices: []
       indices: 
       edges: []
@@ -496,6 +671,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 28663abb090f970459187ca25f8830c9
+      internalID: 21300030
       vertices: []
       indices: 
       edges: []
@@ -504,13 +680,31 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 9aa5525208eaa4c1c92af7ab5d0d2b67
+    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
-  spritePackingTag: 
+    secondaryTextures: []
+    nameFileIdTable:
+      sand_0: 21300000
+      sand_1: 21300002
+      sand_10: 21300020
+      sand_11: 21300022
+      sand_12: 21300024
+      sand_13: 21300026
+      sand_14: 21300028
+      sand_15: 21300030
+      sand_2: 21300004
+      sand_3: 21300006
+      sand_4: 21300008
+      sand_5: 21300010
+      sand_6: 21300012
+      sand_7: 21300014
+      sand_8: 21300016
+      sand_9: 21300018
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

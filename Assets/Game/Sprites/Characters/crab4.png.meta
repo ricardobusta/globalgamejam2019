@@ -1,17 +1,33 @@
 fileFormatVersion: 2
 guid: 7d4b558fa02de5a4faff990ee71999e9
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: crab4_0
-    21300002: crab4_1
-    21300004: crab4_2
-    21300006: crab4_3
-    21300008: crab4_4
-    21300010: crab4_5
-    21300012: crab4_6
-    21300014: crab4_7
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: crab4_0
+  - first:
+      213: 21300002
+    second: crab4_1
+  - first:
+      213: 21300004
+    second: crab4_2
+  - first:
+      213: 21300006
+    second: crab4_3
+  - first:
+      213: 21300008
+    second: crab4_4
+  - first:
+      213: 21300010
+    second: crab4_5
+  - first:
+      213: 21300012
+    second: crab4_6
+  - first:
+      213: 21300014
+    second: crab4_7
   externalObjects: {}
-  serializedVersion: 7
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -28,9 +44,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -39,9 +58,9 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -62,11 +81,17 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
-  - serializedVersion: 2
+  - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -76,8 +101,10 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -87,8 +114,10 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -98,8 +127,10 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -109,7 +140,35 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -129,6 +188,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: f90e5ba0847e7004eb56fcf1d1775bb3
+      internalID: 21300000
       vertices: []
       indices: 
       edges: []
@@ -149,6 +209,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: d6484e008ebaf7349a189730e32f2627
+      internalID: 21300002
       vertices: []
       indices: 
       edges: []
@@ -169,6 +230,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 8e483350a2defcb4c9edb92d574da365
+      internalID: 21300004
       vertices: []
       indices: 
       edges: []
@@ -189,6 +251,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 6edf8d4c75754bd409c4354a860de912
+      internalID: 21300006
       vertices: []
       indices: 
       edges: []
@@ -209,6 +272,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: a6da7ef48bc01d6439dcd6c00de0ea78
+      internalID: 21300008
       vertices: []
       indices: 
       edges: []
@@ -229,6 +293,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: bef4ea230992b59499147f18eb7e61aa
+      internalID: 21300010
       vertices: []
       indices: 
       edges: []
@@ -249,6 +314,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 200e0f9f2ae72f74fad89f93b32e26aa
+      internalID: 21300012
       vertices: []
       indices: 
       edges: []
@@ -269,6 +335,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 1523cf12cbf45fb4b9b5bef25863af8e
+      internalID: 21300014
       vertices: []
       indices: 
       edges: []
@@ -277,13 +344,23 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 0114413d9b756aa4497e1b0ecf888c82
+    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
-  spritePackingTag: 
+    secondaryTextures: []
+    nameFileIdTable:
+      crab4_0: 21300000
+      crab4_1: 21300002
+      crab4_2: 21300004
+      crab4_3: 21300006
+      crab4_4: 21300008
+      crab4_5: 21300010
+      crab4_6: 21300012
+      crab4_7: 21300014
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
